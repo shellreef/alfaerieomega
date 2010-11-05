@@ -10,17 +10,27 @@ import Image
 
 files = os.listdir(".")
 byColor = {}
+byName = {}
 for filename in files:
-    prefix = filename[0]
-    if "." not in filename[1:]:
+    if filename.startswith("gr"):
+        prefix = "gr"
+        rest = filename[2:]
+    else:
+        prefix = filename[0]
+        rest = filename[1:]
+
+    if "." not in rest:
         continue
-    name, suffix = filename[1:].rsplit(".", 1)
+    name, suffix = rest.rsplit(".", 1)
     if suffix != "gif":
         continue
 
     if not byColor.has_key(prefix):
         byColor[prefix] = {}
+    if not byName.has_key(name):
+        byName[name] = []
 
     byColor[prefix][name] = True
+    byName[name].append(prefix)
 
-print pprint.pprint(byColor)
+print pprint.pprint(byName)
