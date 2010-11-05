@@ -8,6 +8,9 @@ import pprint
 import os
 import Image
 
+# b*.gif standardize on this blue
+BLUE = "#5984bd"
+
 def main():
     names = availablePieces()
     print "Loaded %s pieces" % (len(names),)
@@ -15,10 +18,12 @@ def main():
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
 
-        top = topColor(bImage)
+        #top = topColorIndex(bImage)
+        #pal = colorPalette(bImage)
+        #print pal[top]
 
-        print name,getColors(bImage)
-        raise SystemExit
+        top = indexForColor(bImage, BLUE, name)
+        print "@",top
 
         def replace(pixel):
             if pixel == top:
@@ -29,8 +34,19 @@ def main():
         new = bImage.point(replace)
         saveImage(new, "/tmp/test/r" + name + ".gif")
 
-def topColor(image):
-    """Get the most frequently occurring color in an image."""
+def indexForColor(image, rgb, name):
+    indexToRGB = colorPalette(image)
+    rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
+
+    index = rgbToIndex.get(rgb)
+    if index is None:
+        print "** Image %s has no %s: %s" % (name, rgb, rgbToIndex)
+
+    return index
+
+def topColorIndex(image):
+    """Get the most frequently occurring color index in an image."""
+
     histogram = image.histogram()
     colors = {}
     maxCount = 0
@@ -45,11 +61,15 @@ def topColor(image):
         if count > maxCount:
             top = colorIndex
             maxCount = count
+
     return top
 
 
-def getColorMap(image):
+def colorPalette(image):
     """Get the palette mapping the color index to RGB."""
+
+    # This is weird, but we have to call this to make image.im
+    histogram = image.histogram()
 
     # Why isn't this built-into PIL??
     # Based on http://bytes.com/topic/python/answers/444697-retrieve-gifs-palette-entries-using-python-imaging-library-pil
@@ -58,8 +78,10 @@ def getColorMap(image):
     palette = image.im.getpalette()
     colors = [map(ord, bytes) for bytes in chunk(palette, 3)]
 
+    # Convert to HTML-like #rrggbb for ease of use
     hexColors = ["#" + "".join(map(lambda octet: "%.2x" % (octet,), rgb)) for rgb in colors]
-    print hexColors
+
+    return hexColors
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
