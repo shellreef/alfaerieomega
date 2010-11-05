@@ -15,12 +15,14 @@ def main():
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
 
-        #   0   1   2   3  4  5  6   7    8
-        #[648, 0, 1061, 0, 0, 0, 0, 791  0
-        print name, topColors(bImage)
+        top = topColor(bImage)
+
+        print dir(bImage.palette)
+        print bImage.palette.getcolor(0)
+        raise SystemExit
 
         def replace(pixel):
-            if pixel == 7:
+            if pixel == top:
                 return 255
             else:
                 return pixel
@@ -28,13 +30,23 @@ def main():
         new = bImage.point(replace)
         saveImage(new, "/tmp/test/r" + name + ".gif")
 
-def topColors(image):
+def topColor(image):
+    """Get the most frequently occurring color in an image."""
     histogram = image.histogram()
     colors = {}
+    maxCount = 0
+    top = None
+
+    transparency = image.info.get("transparency")
+
     for colorIndex, count in enumerate(histogram):
-        if count != 0:
-            colors[colorIndex] = count
-    return colors
+        if colorIndex == transparency:    # transparent is not a color
+            continue
+
+        if count > maxCount:
+            top = colorIndex
+            maxCount = count
+    return top
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
