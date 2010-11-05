@@ -47,11 +47,19 @@ def topColor(image):
             maxCount = count
     return top
 
-def getColors(image):
-    # Based on http://bytes.com/topic/python/answers/32447-pil-how-use-palette
-    lut = image.resize((256, 1)).convert("RGB")
-    for index in range(0, 256):
-        print index,lut.getpixel((index, 0))
+
+def getColorMap(image):
+    """Get the palette mapping the color index to RGB."""
+
+    # Why isn't this built-into PIL??
+    # Based on http://bytes.com/topic/python/answers/444697-retrieve-gifs-palette-entries-using-python-imaging-library-pil
+    def chunk(seq, size):
+        return [seq[i:i+size] for i in range(0, len(seq), size)]
+    palette = image.im.getpalette()
+    colors = [map(ord, bytes) for bytes in chunk(palette, 3)]
+
+    hexColors = ["#" + "".join(map(lambda octet: "%.2x" % (octet,), rgb)) for rgb in colors]
+    print hexColors
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
