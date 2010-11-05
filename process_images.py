@@ -15,7 +15,26 @@ def main():
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
 
-        saveImage(bImage, "/tmp/a" + name + ".gif")
+        #   0   1   2   3  4  5  6   7    8
+        #[648, 0, 1061, 0, 0, 0, 0, 791  0
+        print name, topColors(bImage)
+
+        def replace(pixel):
+            if pixel == 7:
+                return 255
+            else:
+                return pixel
+
+        new = bImage.point(replace)
+        saveImage(new, "/tmp/test/r" + name + ".gif")
+
+def topColors(image):
+    histogram = image.histogram()
+    colors = {}
+    for colorIndex, count in enumerate(histogram):
+        if count != 0:
+            colors[colorIndex] = count
+    return colors
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
