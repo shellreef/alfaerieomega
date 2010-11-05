@@ -23,7 +23,7 @@ def main():
         #print pal[top]
 
         top = indexForColor(bImage, BLUE, name)
-        print "@",top
+        #print "@",top
 
         def replace(pixel):
             if pixel == top:
@@ -40,7 +40,8 @@ def indexForColor(image, rgb, name):
 
     index = rgbToIndex.get(rgb)
     if index is None:
-        print "** Image %s has no %s: %s" % (name, rgb, rgbToIndex)
+        #print "** Image %s has no %s: %s" % (name, rgb, rgbToIndex)
+        print name
 
     return index
 
