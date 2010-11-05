@@ -15,6 +15,9 @@ for filename in files:
     if filename.startswith("gr"):
         prefix = "gr"
         rest = filename[2:]
+    elif filename.startswith("lb"):
+        prefix = "lb"
+        rest = filename[2:]
     else:
         prefix = filename[0]
         rest = filename[1:]
@@ -34,3 +37,5 @@ for filename in files:
     byName[name].append(prefix)
 
 print pprint.pprint(byName)
+
+print [(name, colors) for name, colors in byName.iteritems() if len(colors) < 2]
