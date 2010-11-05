@@ -17,8 +17,7 @@ def main():
 
         top = topColor(bImage)
 
-        print dir(bImage.palette)
-        print bImage.palette.getcolor(0)
+        print name,getColors(bImage)
         raise SystemExit
 
         def replace(pixel):
@@ -47,6 +46,12 @@ def topColor(image):
             top = colorIndex
             maxCount = count
     return top
+
+def getColors(image):
+    # Based on http://bytes.com/topic/python/answers/32447-pil-how-use-palette
+    lut = image.resize((256, 1)).convert("RGB")
+    for index in range(0, 256):
+        print index,lut.getpixel((index, 0))
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
