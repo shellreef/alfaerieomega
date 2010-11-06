@@ -144,6 +144,7 @@ chariot
 chinesepawn
 chunin_gobetween
 circle
+circlesmall
 combine
 coordinator
 coppergeneral
@@ -262,6 +263,7 @@ fknightbrook
 flexibleknight
 flyingkingfisher
 fool
+forfnibakking
 fort
 fortress
 forwardchancellorprince
@@ -275,6 +277,7 @@ freeleaperpawn
 frog
 frookbbishop
 frookbknight
+furlrurlbakking
 ganycardinal
 ganycardinal2
 ganydragon
