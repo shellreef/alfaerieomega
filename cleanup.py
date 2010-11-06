@@ -8,5 +8,7 @@ for k in d:
     if "Alfaerie" in d[k]["set"]:
         d[k]["set"] = ["Alfaerie"]
 
-print(json.dumps(d))
+
+    if len(d[k]["set"]) > 1:
+        print k, d[k]
 
