@@ -240,6 +240,7 @@ elephantzzstar
 empress2
 envoy
 equesrex
+ewall
 faalcon
 falcon
 falcon2
@@ -686,6 +687,7 @@ wingedcardinal
 withdrawer
 wizzen
 wuss
+wwall
 xqpp
 yellowbishop
 yellowpawn

@@ -16,7 +16,9 @@ BLUE = "#5984bd"
 
 def main():
     index = updatePieceIndex()
-    for name in index.keys():
+    writeIndexDocuments(index)
+
+    for name in sorted(index.keys()):
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
 
@@ -142,6 +144,37 @@ def updatePieceIndex():
     print "Loaded %s pieces" % (len(index.keys()),)
 
     return index
+
+def writeIndexDocuments(index):
+    """Write the index in text and HTML formats."""
+    text = file("list.txt", "w")
+    html = file("master.html", "w")
+
+    html.write("""<!DOCTYPE html>
+<html>
+<head>
+<title>Alfaerie Omega - Piece Index</title>
+</head>
+<body>
+<table>
+""")
+
+    i = 1
+    for name in sorted(index.keys()):
+        #info = index[name]
+
+        text.write(name + "\n")
+        html.write("<tr><td>%s</td>" % (i,))
+        for color in "wb":
+            html.write("""<td><img src="%s%s.gif"></td>""" % (color, name))
+        html.write("<td>%s</td>" % (name,))
+        html.write("</tr>\n")
+
+        i += 1
+
+    html.write("""</table>
+</body>
+</html>""")
 
 if __name__ == "__main__":
     main()
