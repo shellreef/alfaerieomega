@@ -104,15 +104,8 @@ def getPieceIndex():
         byColor = {}
         byName = {}
         for filename in files:
-            if filename.startswith("gr"):
-                prefix = "gr"
-                rest = filename[2:]
-            elif filename.startswith("lb"):
-                prefix = "lb"
-                rest = filename[2:]
-            else:
-                prefix = filename[0]
-                rest = filename[1:]
+            prefix = filename[0]
+            rest = filename[1:]
 
             if "." not in rest:
                 continue
