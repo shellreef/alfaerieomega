@@ -1,0 +1,17 @@
+// Created:20101106
+// By Jeff Connelly
+
+// JSTalk script to manipulate images
+// Requires:
+// http://jstalk.org/
+// http://flyingmeat.com/acorn/
+
+var acorn = JSTalk.application_("Acorn");
+
+// TODO: load index.json
+
+var doc = acorn.open("/Users/jeff/games/chess/images/alfaerieomega/bking.gif")
+
+// TODO: manipulate, new colors, rotations..
+
+doc.dataRepresentationOfType("com.compuserve.gif").writeToFile("/tmp/a.gif")
