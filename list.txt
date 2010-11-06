@@ -25,6 +25,7 @@ alfildabbabarifle
 alfilhexagon
 alfilr4
 alibabariderferz
+allseeingeye
 allseeingeye2
 amantilladobishop
 amazon
@@ -61,6 +62,8 @@ b4nd
 b4wazir
 backslider
 backwardssilvergeneral
+ballista_north
+ballista_south
 banner
 barc
 barc2
@@ -117,6 +120,8 @@ camelwarmachine
 camelwarmachinerider
 camelwazir
 cannon
+cannon_north
+cannon_south
 cannonpawn
 cannonrev
 cardinal
@@ -139,6 +144,7 @@ cbrook
 ccpawn
 chameleon
 champion
+champion2
 chancellor
 chancellor1
 chancellorinv
@@ -186,6 +192,8 @@ cwqueen
 cwrook
 d_ferz
 d_wazir
+dababbahriderferz
+dababbahriderwazir2
 dababbarider
 darter
 deacon
@@ -207,6 +215,7 @@ doubleknight
 doubleknightferzee
 doubleknightwazirzee
 dozer
+drafthorse2
 dragon
 dragon2
 drunkelephant
@@ -378,6 +387,7 @@ hunterg
 hydra
 hydrarider
 immobilizer
+inquisitor
 irongeneral
 juggernaut
 jumpinggeneral
@@ -576,6 +586,7 @@ regallion
 remotesensorenemy
 remotesensorfriend
 remotesensormega
+renn2courier
 renn2squire
 renncavalier
 rennduke
@@ -710,6 +721,7 @@ warmachinewazir
 warmachinezzmoon
 warmachinezzstar
 warmachinezzup1
+watcher
 wazir
 wazirdababaalfil
 wazirferz
