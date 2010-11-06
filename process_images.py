@@ -202,6 +202,9 @@ def findImageSet(name):
     # grep.
     for root, dirs, files in os.walk("sets"):
         for filename in files:
+            if not filename.startswith("alf") and filename != "index.html":
+                continue
+
             path = os.path.join(root, filename)
 
             data = file(path).read()
@@ -210,4 +213,5 @@ def findImageSet(name):
     return found
 
 if __name__ == "__main__":
+    print findImageSet("genscher")
     #main()
