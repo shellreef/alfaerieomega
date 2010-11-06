@@ -9,6 +9,6 @@ for k in d:
         d[k]["set"] = ["Alfaerie"]
 
 
-    if len(d[k]["set"]) > 1:
+    if len(d[k]["set"]) != 1:
         print k, d[k]
 
