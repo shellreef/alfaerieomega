@@ -135,7 +135,7 @@ def updatePieceIndex():
 
         if not index.has_key(name):
             print "New piece:", name
-            index[name] = {}
+            index[name] = {"set": findImageSet("w"+name+".gif")}
         # Otherwise, leave existing entry (preserve metadata)
 
     # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
@@ -195,23 +195,45 @@ def writeIndexDocuments(index):
 </html>""")
 
 def findImageSet(name):
-    """Find the image sets a piece appears in."""
+    """Find the image sets a piece came from.
+    
+    This is intended to be called only once, and offer a best guess. 
+    Renamed images will have to be manually added."""
 
     found = []
 
-    # grep.
+    # Check each set
     for root, dirs, files in os.walk("sets"):
         for filename in files:
-            if not filename.startswith("alf") and filename != "index.html":
+            # Only search top-level alfaerie*.html files...
+            # except for misc, which has subfiles to search (only)
+            if not (filename.startswith("alf") and filename != "alfaeriemisc.html" or ("sets/misc" in root and filename == "index.html")):
                 continue
 
             path = os.path.join(root, filename)
 
             data = file(path).read()
-            if name in data:
-                found.append(path)
+            if name.lower() in data.lower():
+
+                knownSets = {
+                        "alfaerie.html":"Alfaerie",
+                        "alfaerie2.html":"Alfaerie Expansion Set 1",
+                        "alfaerie3.html":"Alfaerie Expansion Set 2",
+                        "alfaerie4.html":"Alfaerie Expansion Set 3",
+                        "alfaerie5.html":"Alfaerie Expansion Set 4",
+                        "alfaerieplus.html":"Alfaerie Plus",
+                        "alfaeriebeta.html":"Alfaerie Beta"}
+
+                if knownSets.has_key(filename):
+                    setName = knownSets[filename]
+                elif "sets/misc" in root:
+                    setName = "Alfaerie Misc: " + root.split("sets/misc/")[1]
+                else:
+                    setName = path
+
+                #found.append(path)
+                found.append(setName)
     return found
 
 if __name__ == "__main__":
-    print findImageSet("genscher")
-    #main()
+    main()
