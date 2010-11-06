@@ -194,5 +194,20 @@ def writeIndexDocuments(index):
 </body>
 </html>""")
 
+def findImageSet(name):
+    """Find the image sets a piece appears in."""
+
+    found = []
+
+    # grep.
+    for root, dirs, files in os.walk("sets"):
+        for filename in files:
+            path = os.path.join(root, filename)
+
+            data = file(path).read()
+            if name in data:
+                found.append(path)
+    return found
+
 if __name__ == "__main__":
-    main()
+    #main()
