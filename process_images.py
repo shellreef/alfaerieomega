@@ -15,8 +15,8 @@ INDEX_FILE = "index.json"
 BLUE = "#5984bd"
 
 def main():
-    names = updatePieceIndex()
-    for name in names:
+    index = updatePieceIndex()
+    for name in index.keys():
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
 
@@ -125,21 +125,23 @@ def updatePieceIndex():
         byColor[prefix][name] = True
         byName[name].append(prefix)
 
-    available = []
     for name, colors in byName.iteritems():
         if "b" in colors and "w" in colors:
-            available.append(name)
+            index[name] = {
+                    # TODO: Remove this. All colors should be available!
+                    "colors": colors
+                    }
         else:
             # These are not considered pieces
             print "Warning: missing images:", colors, name
 
     # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
 
-    file(INDEX_FILE, "w").write(json.dumps(available))
+    file(INDEX_FILE, "w").write(json.dumps(index, indent=1))
 
-    print "Loaded %s pieces" % (len(available),)
+    print "Loaded %s pieces" % (len(index.keys()),)
 
-    return available
+    return index
 
 if __name__ == "__main__":
     main()
