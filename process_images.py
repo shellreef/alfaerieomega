@@ -15,7 +15,7 @@ INDEX_FILE = "index.json"
 BLUE = "#5984bd"
 
 def main():
-    names = getPieceIndex()
+    names = updatePieceIndex()
     for name in names:
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
@@ -24,11 +24,14 @@ def main():
         #pal = colorPalette(bImage)
         #print pal[top]
 
-        top = indexForColor(bImage, BLUE, name)
+        blue = indexForColor(bImage, BLUE)
+        if blue is None:
+            print "Warning: missing blue (%s):" % (BLUE,), "b"+name+".gif"
+
         #print "@",top
 
         def replace(pixel):
-            if pixel == top:
+            if pixel == blue:
                 return 255
             else:
                 return pixel
@@ -36,14 +39,11 @@ def main():
         new = bImage.point(replace)
         saveImage(new, "/tmp/test/r" + name + ".gif")
 
-def indexForColor(image, rgb, name):
+def indexForColor(image, rgb):
     indexToRGB = colorPalette(image)
     rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
 
     index = rgbToIndex.get(rgb)
-    if index is None:
-        #print "** Image %s has no %s: %s" % (name, rgb, rgbToIndex)
-        print name
 
     return index
 
@@ -95,40 +95,47 @@ def saveImage(image, filename):
         kwargs = {}
     image.save(filename, **kwargs)
 
-def getPieceIndex():
+def updatePieceIndex():
     """Get the index of pieces, generating if needed."""
-    if False and os.path.exists(INDEX_FILE):
-        available = json.loads(file(INDEX_FILE).read())
+    if os.path.exists(INDEX_FILE):
+        # Preserve existing metadata if any
+        index = json.loads(file(INDEX_FILE).read())
     else:
-        files = os.listdir(".")
-        byColor = {}
-        byName = {}
-        for filename in files:
-            prefix = filename[0]
-            rest = filename[1:]
+        index = {}
 
-            if "." not in rest:
-                continue
-            name, suffix = rest.rsplit(".", 1)
-            if suffix != "gif":
-                continue
+    # Go through each image
+    files = os.listdir(".")
+    byColor = {}
+    byName = {}
+    for filename in files:
+        prefix = filename[0]
+        rest = filename[1:]
 
-            if not byColor.has_key(prefix):
-                byColor[prefix] = {}
-            if not byName.has_key(name):
-                byName[name] = []
+        if "." not in rest:
+            continue
+        name, suffix = rest.rsplit(".", 1)
+        if suffix != "gif":
+            continue
 
-            byColor[prefix][name] = True
-            byName[name].append(prefix)
+        if not byColor.has_key(prefix):
+            byColor[prefix] = {}
+        if not byName.has_key(name):
+            byName[name] = []
 
-        print " ".join([colors[0] + name + ".gif" for name, colors in byName.iteritems() if len(colors) < 2])
+        byColor[prefix][name] = True
+        byName[name].append(prefix)
 
-        # Available piece names
-        available = [name for name, colors in byName.iteritems() if "b" in colors and "w" in colors]
+    available = []
+    for name, colors in byName.iteritems():
+        if "b" in colors and "w" in colors:
+            available.append(name)
+        else:
+            # These are not considered pieces
+            print "Warning: missing images:", colors, name
 
-        # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
+    # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
 
-        file(INDEX_FILE, "w").write(json.dumps(available))
+    file(INDEX_FILE, "w").write(json.dumps(available))
 
     print "Loaded %s pieces" % (len(available),)
 
