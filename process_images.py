@@ -100,7 +100,7 @@ def saveImage(image, filename):
 def updatePieceIndex():
     """Get the index of pieces, generating if needed."""
     if os.path.exists(INDEX_FILE):
-        # Preserve existing metadata if any
+        # Load existing metadata 
         index = json.loads(file(INDEX_FILE).read())
     else:
         index = {}
@@ -128,18 +128,36 @@ def updatePieceIndex():
         byName[name].append(prefix)
 
     for name, colors in byName.iteritems():
-        if "b" in colors and "w" in colors:
-            index[name] = {
-                    # TODO: Remove this. All colors should be available!
-                    "colors": colors
-                    }
-        else:
+        if not ("b" in colors and "w" in colors):
             # These are not considered pieces
             print "Warning: missing images:", colors, name
+            continue
+
+        if not index.has_key(name):
+            print "New piece:", name
+            index[name] = {}
+        # Otherwise, leave existing entry (preserve metadata)
 
     # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
 
-    file(INDEX_FILE, "w").write(json.dumps(index, indent=1))
+    #file(INDEX_FILE, "w").write(json.dumps(index, indent=1))
+    # Save as JSON for ease usage in other applications
+    # Could simply use json.dumps(index), but want the dictionary keys to
+    # be sorted to avoid noisy diffs in version control.
+    out = file(INDEX_FILE, "w")
+    out.write("{\n")
+
+    for i, name in enumerate(sorted(index.keys())):
+        info = index[name]
+        out.write(' "%s": %s' % (name, json.dumps(info)))
+
+        # JSON spec (and IE, but no one cares about them) require omitting
+        # comma for last item in list
+        if i != len(index.keys()) - 1:
+            out.write(",")
+
+        out.write("\n")
+    out.write("}\n")
 
     print "Loaded %s pieces" % (len(index.keys()),)
 

@@ -1,4454 +1,706 @@
 {
- "knightwarmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "circlesmall": {
-  "colors": [
-   "b", 
-   "g", 
-   "r", 
-   "w"
-  ]
- }, 
- "bishopwarmachinerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ducaterror": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelriderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crocodile": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhino": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gorgona": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "barcrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "r4ferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "naretev": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinohalfduck": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialelephant": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizeddabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chameleon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialdabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "scout": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemurianelephantferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemmarshall": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fknightbrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lance2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "cbjcamelking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cwbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "renncavalier": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "parallelgeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganycardinal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "allseeingeye2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantsiegeenginerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "offremotesensorenemy": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "grasshopper": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellor1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "moonrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellorinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "alfilhexagon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "panda": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "general2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wildebeest": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2zz3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "genscher": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzlight1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzlight3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kingknight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzlight5": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bird": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "hiroku_flyingstag": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bottomheart": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "royalbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kangaroo": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "frookbbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bigknightking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinozebrarider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "twodiamondrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "amazonrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cwknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "falcon2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fourleaper": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "greenpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "envoy": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gryphon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hexagon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "neswbarbershoppiece3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "flexibleknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sespearman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabsnail": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fbishopbrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snake4se": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1dsilver": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "brownrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelbishoprider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crusader": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "grandrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halfrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "frog": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hydra": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganyroc": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedknightriderlongshort": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lionmod3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "empress2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wader": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "b4wazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellorwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "demon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fknightbking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "stone": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "king45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cwrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "reflectingbishopwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lord": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mann2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "herowarmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinosiegeenginerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellorrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "blueking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rennduke": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "appblockx3actualizedpotentialguard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "redpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1dgold": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "minister2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "archer": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "promotedshogihorse": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rooktriangulatorbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "purplebishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "meatball": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fortress": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "viceroy": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "templar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ducaqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "forwardmirror3wazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawninv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pkpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantzzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantknightrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halflingcardinal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantcamel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizeddabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinal": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "leftberolinapawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chunin_gobetween": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "scorpionpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "royalrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "losalamospawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "silvergeneral": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "actualizedpotentialwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "highpriestess2ferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "dragon2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "plane": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialguard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "spaciouswazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "advancedsoldier": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mao": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "man": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mastodon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "spaciousferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rookpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "dragon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantridermodern": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fourfer": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gryphg": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queenalfildabbaba3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halflingbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "amazonriderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "twodiamondqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "swall": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferzx4sw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sspearman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1bishop2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "regallion": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hansha_reversechariot": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "shamanelephantferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "backwardssilvergeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "aanca": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fool": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "berolinapawn": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "knight135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishopwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellorriderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffe": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snake": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "alfilr4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cage": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialguard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemurianjumpinggeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishopinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "alibabariderferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "siegeenginerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fiveriderpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "freeleaperpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slidinggeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "royalpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bw3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephanty": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1rook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "duchess": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "amantilladobishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinalinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2zz4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "orphanpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kingbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halfqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinalrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lance1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachine": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "doubleactualizedpotentialguard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "archerzz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "archerzz3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "forwardrookbackwardsprince": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "girafferider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "jumpinggeneral2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "princess": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "roserook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mohyo_ferociousleopard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "r4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "r3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mortar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1dknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemurianfad": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedknightrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "steward": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "neswknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pepperoni": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hannibal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cbrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffezz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "offremotesensorfriend": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "orangeknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camel2wazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slipqueenzz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bluepawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "highpriest_ess": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horse": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "monkey": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "quickpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffeferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sergeant": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rightsinglesteprhino": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chinesepawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "direknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "honcho_freeboar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "optingpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen45ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantcamelrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "greatwarmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachinerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "forwardknightbackwardsprince": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebrazzmoon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffezzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ox": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "b4nd": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "2movewazirferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "barc": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelsiegeengine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cavalier": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferzb": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferzf": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "goldgeneral": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "ferzx4nw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "dozer": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ram": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "oliphant": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferzx4ne": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "weakpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "onediamondrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "archabbott": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "veteran": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ewall": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "faalcon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "reaper": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedknightriderlong": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cbqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "squirrelrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinorider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "d_wazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "royalqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "butterfly": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinalriderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halfbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "promotedsilvergeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sausage": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "guardknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "yellowpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "threeheadmonster": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hasdrubal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tinyscamelking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantferzrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelwarmachinerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "supamaduca": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebracamel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinocamelrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fbishopbnight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chariot": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelrev2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "cardinal1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinal2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fknightbqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "shogiknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halflingqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "shogipawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kengyo_verticalmover": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pinkpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nightriderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crab2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "q3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "equesrex": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "q4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fknightbbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantsiegeengine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "scorpion": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lightningwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantwarmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "darter": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "narrowknightferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "triangulator": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fort": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hydrarider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferzx4se": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "remotesensorenemy": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "cannon": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "crabshortrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2ferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachineferzrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "amazon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crownedcamel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "banner": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nnpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bat": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzlight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "retnuhg": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rf3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ogyo_sidemover": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "forwardchancellorprince": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "reflectingbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightzzlight4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "seepingunicorn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "onediamondqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "guardknight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "circle": {
-  "colors": [
-   "b", 
-   "g", 
-   "r", 
-   "w"
-  ]
- }, 
- "zebrastar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "topheart": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabalfil": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachinezzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "multipathzebraknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "orphan": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirx4ne": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lion": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "medusa": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "offremotesensormega": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirx4nw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cbbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nspearman": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "pawn90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "paladin2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wuss": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pushmepullyu": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "linearchieftainjumpinggeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "archduke": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "narrowknightwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "alfilbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slipbishop2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bird2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedknightridershort": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "offremotesensorduke": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cannonrev": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezzmoon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mage": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nwall": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nwd": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabinal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "falcong": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "n2r4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rose": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "siegeengine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishopknight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queenknight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantwarmachinerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganyfrog": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rrpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cwqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cardinalferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cbknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "actualizedpotentialrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hiju_soaringeagle": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slidingdiamondnightrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "purplepawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleknightferzee": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezzstar2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "remotesensormega": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hospitaler": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sissa2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganypikeman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantknightwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hunterg": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinozebra": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightsiegeenginerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "jumpinggeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "flyingkingfisher": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "champion": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "mushroom": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "giraffestar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tiger": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "minister": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crandodo": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "general": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rookelephantrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "napoleon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tank": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "withdrawer": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nwsebarbershoppiece3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantmodern": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cbpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn135cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wwall": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hakku_whitehorse": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lizard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebrawazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabsnail1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezz4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lamedabbaba": {
-  "colors": [
-   "b", 
-   "c", 
-   "r", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezz3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "horsezz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "narrowknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kinginv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knight90cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wideknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "square45": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "multipathgiraffeknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nightrider": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "ganyfrog3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fqueenbknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "higyu_flyingox": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wizzen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirx4se": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "threediamondbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "simplecamelking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "catfish": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "onediamondbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirx4sw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialdabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "shatranjpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "windmill": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "paladin": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2zz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephant2zz5": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialalfil": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snail": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tripleactualizedpotentialguard": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "diplomat": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "threediamondrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "promotedshogipawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "unicorn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganydragon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "backslider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pegasus": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "multipathcamelknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "dababbarider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "orangepawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "renn2squire": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "promotedbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lamealfil2": {
-  "colors": [
-   "b", 
-   "c", 
-   "r", 
-   "w"
-  ]
- }, 
- "rocket": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camel": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "actualizedpotentialknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "leftsinglesteprhino": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rook135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snake4sw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganycardinal2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gun": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebracamelrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "promotedshogilance": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "remotesensorfriend": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kingpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "prince": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "superguard3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "superguard2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "superguard1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crab": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebraferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zigzaggeneral2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1rook2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "aancagryphon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zigzaggeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "xqpp": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "toddlerphoenix": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "combine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "edgehog": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "alfildabbabarifle": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "fkingbknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "chancellor": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "ccpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "forfnibakking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "moo": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "templar2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "falcon": {
-  "colors": [
-   "b", 
-   "n", 
-   "w"
-  ]
- }, 
- "moa": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rookknight2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantzzmoon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "howitzer": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantferzwarmachine": {
-  "colors": [
-   "b", 
-   "o", 
-   "p", 
-   "w"
-  ]
- }, 
- "promotedrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinorev": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nightknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camel2ferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelsiegeenginerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queeninv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "thief": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "b4": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lobster": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "king135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirdababaalfil": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "b3": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemurianwarmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightwazirwarmachine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gryphon2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabdabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nwspearman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "keigei_whale": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wingedcardinal": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "makrukpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "squire": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "moon": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "camel2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "threediamondqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "mini_rose": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "brownpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebrariderq": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "squirrel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightcamelzebra": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pinkknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazir": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "halflingrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "furlrurlbakking": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachineferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightdababaferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebrarider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "halfrose": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn135ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "liapawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wingedamazon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishoppawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wazirferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "block": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "duke": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightcamel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachinewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lemarchbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pincerpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warmachineriderwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rosebishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "guard": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "shipinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "2moveferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ferz": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "grasshopperzzstar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kakuo_hornedfalcon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "vao": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "swspearman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "2movewazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tilegeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rightberolinapawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "royalknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rookinv": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleactualizedpotentialknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "twistedknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "coppergeneral": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kingrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "doubleknightwazirzee": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ganyfrog2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "wildebeest2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "spider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rjf": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "marshal2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slipqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "paovao": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "triangulatorbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "goose": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ubiubi": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "harvester": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hamilcar": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockx2actualizedpotentialpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "barc2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightrev": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "frookbknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightwarmachinerider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "hornet": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "zebra": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "eaglescout": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "redrook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nespearman": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "1bishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snake4ne": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slidingdiamondalfil": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "coordinator": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "d_ferz": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rookdabbaba": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crabinal1": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinosiegeengine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "snake4nw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "ship": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "slipbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop": {
-  "colors": [
-   "b", 
-   "c", 
-   "e", 
-   "g", 
-   "n", 
-   "o", 
-   "p", 
-   "r", 
-   "w", 
-   "y"
-  ]
- }, 
- "unicornrider": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "kozune": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "tokin_promotedpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "noclafg": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "carronade": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawnknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "moosepawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "sliprook": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "pawn90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "queen45cw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "immobilizer": {
-  "colors": [
-   "b", 
-   "r", 
-   "w"
-  ]
- }, 
- "actualizedpotentialelephant": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "longleaper": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "twodiamondbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "lance": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "highpriestess": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "nwseknight": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bishop90ccw": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "bigbertha": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "moko_blindtiger": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "supermaharajaschah": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "gnohmon": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cwpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinozz2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rooktriangulator": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "cannonpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "yellowbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "crookedbishopwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightpawn": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "betzancrab": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "appblockingactualizedpotentialbishop": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "slidinggeneral2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "drunkelephant": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "elephantrev2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "warlock": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "greenqueen": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "theif2": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "knightsiegeengine": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "rhinocamel": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }, 
- "camelwazir": {
-  "colors": [
-   "b", 
-   "w"
-  ]
- }
+ "1bishop": {},
+ "1bishop2": {},
+ "1dgold": {},
+ "1dknight": {},
+ "1dsilver": {},
+ "1rook": {},
+ "1rook2": {},
+ "2moveferz": {},
+ "2movewazir": {},
+ "2movewazirferz": {},
+ "aanca": {},
+ "aancagryphon": {},
+ "actualizedpotentialbishop": {},
+ "actualizedpotentialdabbaba": {},
+ "actualizedpotentialelephant": {},
+ "actualizedpotentialferz": {},
+ "actualizedpotentialknight": {},
+ "actualizedpotentialpawn": {},
+ "actualizedpotentialqueen": {},
+ "actualizedpotentialrook": {},
+ "actualizedpotentialwazir": {},
+ "advancedsoldier": {},
+ "alfilbishop": {},
+ "alfildabbabarifle": {},
+ "alfilhexagon": {},
+ "alfilr4": {},
+ "alibabariderferz": {},
+ "allseeingeye2": {},
+ "amantilladobishop": {},
+ "amazon": {},
+ "amazonrider": {},
+ "amazonriderq": {},
+ "appblockingactualizedpotentialalfil": {},
+ "appblockingactualizedpotentialbishop": {},
+ "appblockingactualizedpotentialdabbaba": {},
+ "appblockingactualizedpotentialferz": {},
+ "appblockingactualizedpotentialguard": {},
+ "appblockingactualizedpotentialknight": {},
+ "appblockingactualizedpotentialpawn": {},
+ "appblockingactualizedpotentialqueen": {},
+ "appblockingactualizedpotentialrook": {},
+ "appblockingactualizedpotentialwazir": {},
+ "appblockx2actualizeddabbaba": {},
+ "appblockx2actualizedpotentialbishop": {},
+ "appblockx2actualizedpotentialferz": {},
+ "appblockx2actualizedpotentialguard": {},
+ "appblockx2actualizedpotentialknight": {},
+ "appblockx2actualizedpotentialpawn": {},
+ "appblockx2actualizedpotentialqueen": {},
+ "appblockx2actualizedpotentialrook": {},
+ "appblockx2actualizedpotentialwazir": {},
+ "appblockx3actualizedpotentialguard": {},
+ "archabbott": {},
+ "archduke": {},
+ "archer": {},
+ "archerzz2": {},
+ "archerzz3": {},
+ "b3": {},
+ "b4": {},
+ "b4nd": {},
+ "b4wazir": {},
+ "backslider": {},
+ "backwardssilvergeneral": {},
+ "banner": {},
+ "barc": {},
+ "barc2": {},
+ "barcrider": {},
+ "bat": {},
+ "berolinapawn": {},
+ "betzancrab": {},
+ "bigbertha": {},
+ "bigknightking": {},
+ "bird": {},
+ "bird2": {},
+ "bishop": {},
+ "bishop135ccw": {},
+ "bishop135cw": {},
+ "bishop45ccw": {},
+ "bishop45cw": {},
+ "bishop90ccw": {},
+ "bishop90cw": {},
+ "bishopinv": {},
+ "bishopknight2": {},
+ "bishoppawn": {},
+ "bishopwarmachine": {},
+ "bishopwarmachinerider": {},
+ "block": {},
+ "blueking": {},
+ "bluepawn": {},
+ "bottomheart": {},
+ "brownpawn": {},
+ "brownrook": {},
+ "butterfly": {},
+ "bw3": {},
+ "cage": {},
+ "camel": {},
+ "camel2": {},
+ "camel2ferz": {},
+ "camel2wazir": {},
+ "camelbishop": {},
+ "camelbishoprider": {},
+ "camelferz": {},
+ "camelpawn": {},
+ "camelqueen": {},
+ "camelrev2": {},
+ "camelrider": {},
+ "camelriderq": {},
+ "camelrook": {},
+ "camelsiegeengine": {},
+ "camelsiegeenginerider": {},
+ "camelstar": {},
+ "camelwarmachine": {},
+ "camelwarmachinerider": {},
+ "camelwazir": {},
+ "cannon": {},
+ "cannonpawn": {},
+ "cannonrev": {},
+ "cardinal": {},
+ "cardinal1": {},
+ "cardinal2": {},
+ "cardinalferz": {},
+ "cardinalinv": {},
+ "cardinalrider": {},
+ "cardinalriderq": {},
+ "carronade": {},
+ "catfish": {},
+ "cavalier": {},
+ "cbbishop": {},
+ "cbjcamelking": {},
+ "cbknight": {},
+ "cbpawn": {},
+ "cbqueen": {},
+ "cbrook": {},
+ "ccpawn": {},
+ "chameleon": {},
+ "champion": {},
+ "chancellor": {},
+ "chancellor1": {},
+ "chancellorinv": {},
+ "chancellorrider": {},
+ "chancellorriderq": {},
+ "chancellorwazir": {},
+ "chariot": {},
+ "chinesepawn": {},
+ "chunin_gobetween": {},
+ "circle": {},
+ "circlesmall": {},
+ "combine": {},
+ "coordinator": {},
+ "coppergeneral": {},
+ "crab": {},
+ "crab2": {},
+ "crabalfil": {},
+ "crabdabbaba": {},
+ "crabferz": {},
+ "crabinal": {},
+ "crabinal1": {},
+ "crabrider": {},
+ "crabshortrook": {},
+ "crabsnail": {},
+ "crabsnail1": {},
+ "crabwazir": {},
+ "crandodo": {},
+ "crocodile": {},
+ "crookedbishop": {},
+ "crookedbishopwazir": {},
+ "crookedknightrider": {},
+ "crookedknightriderlong": {},
+ "crookedknightriderlongshort": {},
+ "crookedknightridershort": {},
+ "crookedqueen": {},
+ "crookedrook": {},
+ "crownedcamel": {},
+ "crusader": {},
+ "cwbishop": {},
+ "cwknight": {},
+ "cwpawn": {},
+ "cwqueen": {},
+ "cwrook": {},
+ "d_ferz": {},
+ "d_wazir": {},
+ "dababbarider": {},
+ "darter": {},
+ "demon": {},
+ "diplomat": {},
+ "direknight": {},
+ "doubleactualizeddabbaba": {},
+ "doubleactualizedpotentialbishop": {},
+ "doubleactualizedpotentialelephant": {},
+ "doubleactualizedpotentialferz": {},
+ "doubleactualizedpotentialguard": {},
+ "doubleactualizedpotentialknight": {},
+ "doubleactualizedpotentialpawn": {},
+ "doubleactualizedpotentialqueen": {},
+ "doubleactualizedpotentialrook": {},
+ "doubleactualizedpotentialwazir": {},
+ "doubleknight": {},
+ "doubleknightferzee": {},
+ "doubleknightwazirzee": {},
+ "dozer": {},
+ "dragon": {},
+ "dragon2": {},
+ "drunkelephant": {},
+ "ducaqueen": {},
+ "ducaterror": {},
+ "duchess": {},
+ "duke": {},
+ "eaglescout": {},
+ "edgehog": {},
+ "elephant": {},
+ "elephant1": {},
+ "elephant2": {},
+ "elephant2ferz": {},
+ "elephant2zz2": {},
+ "elephant2zz3": {},
+ "elephant2zz4": {},
+ "elephant2zz5": {},
+ "elephantcamel": {},
+ "elephantcamelrider": {},
+ "elephantferz": {},
+ "elephantferzrook": {},
+ "elephantferzwarmachine": {},
+ "elephantknight": {},
+ "elephantknightrider": {},
+ "elephantknightwazir": {},
+ "elephantmodern": {},
+ "elephantrev2": {},
+ "elephantrider": {},
+ "elephantridermodern": {},
+ "elephantsiegeengine": {},
+ "elephantsiegeenginerider": {},
+ "elephantstar": {},
+ "elephantwarmachine": {},
+ "elephantwarmachinerider": {},
+ "elephantwarmachinewazir": {},
+ "elephantwazir": {},
+ "elephanty": {},
+ "elephantzzmoon": {},
+ "elephantzzstar": {},
+ "empress2": {},
+ "envoy": {},
+ "equesrex": {},
+ "ewall": {},
+ "faalcon": {},
+ "falcon": {},
+ "falcon2": {},
+ "falcong": {},
+ "fbishopbnight": {},
+ "fbishopbrook": {},
+ "ferz": {},
+ "ferz2": {},
+ "ferzb": {},
+ "ferzf": {},
+ "ferzx4ne": {},
+ "ferzx4nw": {},
+ "ferzx4se": {},
+ "ferzx4sw": {},
+ "fiveriderpawn": {},
+ "fkingbknight": {},
+ "fknightbbishop": {},
+ "fknightbking": {},
+ "fknightbqueen": {},
+ "fknightbrook": {},
+ "flexibleknight": {},
+ "flyingkingfisher": {},
+ "fool": {},
+ "forfnibakking": {},
+ "fort": {},
+ "fortress": {},
+ "forwardchancellorprince": {},
+ "forwardknightbackwardsprince": {},
+ "forwardmirror3wazir": {},
+ "forwardrookbackwardsprince": {},
+ "fourfer": {},
+ "fourleaper": {},
+ "fqueenbknight": {},
+ "freeleaperpawn": {},
+ "frog": {},
+ "frookbbishop": {},
+ "frookbknight": {},
+ "furlrurlbakking": {},
+ "ganycardinal": {},
+ "ganycardinal2": {},
+ "ganydragon": {},
+ "ganyfrog": {},
+ "ganyfrog2": {},
+ "ganyfrog3": {},
+ "ganypikeman": {},
+ "ganyroc": {},
+ "general": {},
+ "general2": {},
+ "genscher": {},
+ "giraffe": {},
+ "giraffeferz": {},
+ "girafferider": {},
+ "giraffestar": {},
+ "giraffewazir": {},
+ "giraffezz2": {},
+ "giraffezzstar": {},
+ "gnohmon": {},
+ "goldgeneral": {},
+ "goose": {},
+ "gorgona": {},
+ "grandrook": {},
+ "grasshopper": {},
+ "grasshopperzzstar": {},
+ "greatwarmachinewazir": {},
+ "greenpawn": {},
+ "greenqueen": {},
+ "gryphg": {},
+ "gryphon": {},
+ "gryphon2": {},
+ "guard": {},
+ "guardknight": {},
+ "guardknight2": {},
+ "gun": {},
+ "hakku_whitehorse": {},
+ "halfbishop": {},
+ "halflingbishop": {},
+ "halflingcardinal": {},
+ "halflingqueen": {},
+ "halflingrook": {},
+ "halfqueen": {},
+ "halfrook": {},
+ "halfrose": {},
+ "hamilcar": {},
+ "hannibal": {},
+ "hansha_reversechariot": {},
+ "harvester": {},
+ "hasdrubal": {},
+ "herowarmachinewazir": {},
+ "hexagon": {},
+ "highpriest_ess": {},
+ "highpriestess": {},
+ "highpriestess2ferz": {},
+ "higyu_flyingox": {},
+ "hiju_soaringeagle": {},
+ "hiroku_flyingstag": {},
+ "honcho_freeboar": {},
+ "hornet": {},
+ "horse": {},
+ "horsewazir": {},
+ "horsezz2": {},
+ "horsezz3": {},
+ "horsezz4": {},
+ "horsezzmoon": {},
+ "horsezzstar": {},
+ "horsezzstar2": {},
+ "hospitaler": {},
+ "howitzer": {},
+ "hunterg": {},
+ "hydra": {},
+ "hydrarider": {},
+ "immobilizer": {},
+ "jumpinggeneral": {},
+ "jumpinggeneral2": {},
+ "kakuo_hornedfalcon": {},
+ "kangaroo": {},
+ "keigei_whale": {},
+ "kengyo_verticalmover": {},
+ "king": {},
+ "king135ccw": {},
+ "king135cw": {},
+ "king45ccw": {},
+ "king45cw": {},
+ "king90ccw": {},
+ "king90cw": {},
+ "kingbishop": {},
+ "kinginv": {},
+ "kingknight2": {},
+ "kingpawn": {},
+ "kingrook": {},
+ "knight": {},
+ "knight135ccw": {},
+ "knight135cw": {},
+ "knight45ccw": {},
+ "knight45cw": {},
+ "knight90ccw": {},
+ "knight90cw": {},
+ "knightcamel": {},
+ "knightcamelzebra": {},
+ "knightdababaferz": {},
+ "knightferz": {},
+ "knightinv": {},
+ "knightpawn": {},
+ "knightrev": {},
+ "knightsiegeengine": {},
+ "knightsiegeenginerider": {},
+ "knightwarmachine": {},
+ "knightwarmachinerider": {},
+ "knightwarmachinewazir": {},
+ "knightwazir": {},
+ "knightwazirwarmachine": {},
+ "knightzzlight1": {},
+ "knightzzlight2": {},
+ "knightzzlight3": {},
+ "knightzzlight4": {},
+ "knightzzlight5": {},
+ "knightzzstar": {},
+ "kozune": {},
+ "lamealfil2": {},
+ "lamedabbaba": {},
+ "lance": {},
+ "lance1": {},
+ "lance2": {},
+ "leftberolinapawn": {},
+ "leftsinglesteprhino": {},
+ "lemarchbishop": {},
+ "lemmarshall": {},
+ "lemqueen": {},
+ "lemurianelephantferz": {},
+ "lemurianfad": {},
+ "lemurianjumpinggeneral": {},
+ "lemurianwarmachinewazir": {},
+ "liapawn": {},
+ "lightningwarmachine": {},
+ "linearchieftainjumpinggeneral": {},
+ "lion": {},
+ "lionmod3": {},
+ "lizard": {},
+ "lobster": {},
+ "longleaper": {},
+ "lord": {},
+ "losalamospawn": {},
+ "mage": {},
+ "makrukpawn": {},
+ "man": {},
+ "mann2": {},
+ "mao": {},
+ "marshal2": {},
+ "mastodon": {},
+ "meatball": {},
+ "medusa": {},
+ "mini_rose": {},
+ "minister": {},
+ "minister2": {},
+ "moa": {},
+ "mohyo_ferociousleopard": {},
+ "moko_blindtiger": {},
+ "monkey": {},
+ "moo": {},
+ "moon": {},
+ "moonrider": {},
+ "moosepawn": {},
+ "mortar": {},
+ "multipathcamelknight": {},
+ "multipathgiraffeknight": {},
+ "multipathzebraknight": {},
+ "mushroom": {},
+ "n2r4": {},
+ "napoleon": {},
+ "naretev": {},
+ "narrowknight": {},
+ "narrowknightferz": {},
+ "narrowknightwazir": {},
+ "nespearman": {},
+ "neswbarbershoppiece3": {},
+ "neswknight": {},
+ "nightknight": {},
+ "nightrider": {},
+ "nightriderq": {},
+ "nnpawn": {},
+ "noclafg": {},
+ "nspearman": {},
+ "nwall": {},
+ "nwd": {},
+ "nwsebarbershoppiece3": {},
+ "nwseknight": {},
+ "nwspearman": {},
+ "offremotesensorduke": {},
+ "offremotesensorenemy": {},
+ "offremotesensorfriend": {},
+ "offremotesensormega": {},
+ "ogyo_sidemover": {},
+ "oliphant": {},
+ "onediamondbishop": {},
+ "onediamondqueen": {},
+ "onediamondrook": {},
+ "optingpawn": {},
+ "orangeknight": {},
+ "orangepawn": {},
+ "orphan": {},
+ "orphanpawn": {},
+ "ox": {},
+ "paladin": {},
+ "paladin2": {},
+ "panda": {},
+ "paovao": {},
+ "parallelgeneral": {},
+ "pawn": {},
+ "pawn135ccw": {},
+ "pawn135cw": {},
+ "pawn45ccw": {},
+ "pawn45cw": {},
+ "pawn90ccw": {},
+ "pawn90cw": {},
+ "pawninv": {},
+ "pawnknight": {},
+ "pegasus": {},
+ "pepperoni": {},
+ "pincerpawn": {},
+ "pinkknight": {},
+ "pinkpawn": {},
+ "pkpawn": {},
+ "plane": {},
+ "prince": {},
+ "princess": {},
+ "promotedbishop": {},
+ "promotedrook": {},
+ "promotedshogihorse": {},
+ "promotedshogilance": {},
+ "promotedshogipawn": {},
+ "promotedsilvergeneral": {},
+ "purplebishop": {},
+ "purplepawn": {},
+ "pushmepullyu": {},
+ "q3": {},
+ "q4": {},
+ "queen": {},
+ "queen135ccw": {},
+ "queen135cw": {},
+ "queen45ccw": {},
+ "queen45cw": {},
+ "queen90ccw": {},
+ "queen90cw": {},
+ "queenalfildabbaba3": {},
+ "queeninv": {},
+ "queenknight2": {},
+ "quickpawn": {},
+ "r3": {},
+ "r4": {},
+ "r4ferz": {},
+ "ram": {},
+ "reaper": {},
+ "redpawn": {},
+ "redrook": {},
+ "reflectingbishop": {},
+ "reflectingbishopwazir": {},
+ "regallion": {},
+ "remotesensorenemy": {},
+ "remotesensorfriend": {},
+ "remotesensormega": {},
+ "renn2squire": {},
+ "renncavalier": {},
+ "rennduke": {},
+ "retnuhg": {},
+ "rf3": {},
+ "rhino": {},
+ "rhinocamel": {},
+ "rhinocamelrider": {},
+ "rhinohalfduck": {},
+ "rhinorev": {},
+ "rhinorider": {},
+ "rhinosiegeengine": {},
+ "rhinosiegeenginerider": {},
+ "rhinozebra": {},
+ "rhinozebrarider": {},
+ "rhinozz2": {},
+ "rightberolinapawn": {},
+ "rightsinglesteprhino": {},
+ "rjf": {},
+ "rocket": {},
+ "rook": {},
+ "rook135ccw": {},
+ "rook135cw": {},
+ "rook45ccw": {},
+ "rook45cw": {},
+ "rook90ccw": {},
+ "rook90cw": {},
+ "rookdabbaba": {},
+ "rookelephantrider": {},
+ "rookinv": {},
+ "rookknight2": {},
+ "rookpawn": {},
+ "rooktriangulator": {},
+ "rooktriangulatorbishop": {},
+ "rose": {},
+ "rosebishop": {},
+ "roserook": {},
+ "royalbishop": {},
+ "royalknight": {},
+ "royalpawn": {},
+ "royalqueen": {},
+ "royalrook": {},
+ "rrpawn": {},
+ "sausage": {},
+ "scorpion": {},
+ "scorpionpawn": {},
+ "scout": {},
+ "seepingunicorn": {},
+ "sergeant": {},
+ "sespearman": {},
+ "shamanelephantferz": {},
+ "shatranjpawn": {},
+ "ship": {},
+ "shipinv": {},
+ "shogiknight": {},
+ "shogipawn": {},
+ "siegeengine": {},
+ "siegeenginerider": {},
+ "silvergeneral": {},
+ "simplecamelking": {},
+ "sissa2": {},
+ "slidingdiamondalfil": {},
+ "slidingdiamondnightrider": {},
+ "slidinggeneral": {},
+ "slidinggeneral2": {},
+ "slipbishop": {},
+ "slipbishop2": {},
+ "slipqueen": {},
+ "slipqueenzz2": {},
+ "sliprook": {},
+ "snail": {},
+ "snake": {},
+ "snake4ne": {},
+ "snake4nw": {},
+ "snake4se": {},
+ "snake4sw": {},
+ "spaciousferz": {},
+ "spaciouswazir": {},
+ "spider": {},
+ "square45": {},
+ "squire": {},
+ "squirrel": {},
+ "squirrelrider": {},
+ "sspearman": {},
+ "steward": {},
+ "stone": {},
+ "supamaduca": {},
+ "superguard1": {},
+ "superguard2": {},
+ "superguard3": {},
+ "supermaharajaschah": {},
+ "swall": {},
+ "swspearman": {},
+ "tank": {},
+ "templar": {},
+ "templar2": {},
+ "theif2": {},
+ "thief": {},
+ "threediamondbishop": {},
+ "threediamondqueen": {},
+ "threediamondrook": {},
+ "threeheadmonster": {},
+ "tiger": {},
+ "tilegeneral": {},
+ "tinyscamelking": {},
+ "toddlerphoenix": {},
+ "tokin_promotedpawn": {},
+ "topheart": {},
+ "triangulator": {},
+ "triangulatorbishop": {},
+ "tripleactualizedpotentialguard": {},
+ "twistedknight": {},
+ "twodiamondbishop": {},
+ "twodiamondqueen": {},
+ "twodiamondrook": {},
+ "ubiubi": {},
+ "unicorn": {},
+ "unicornrider": {},
+ "vao": {},
+ "veteran": {},
+ "viceroy": {},
+ "wader": {},
+ "warlock": {},
+ "warmachine": {},
+ "warmachineferz": {},
+ "warmachineferzrider": {},
+ "warmachinerider": {},
+ "warmachineriderwazir": {},
+ "warmachinewazir": {},
+ "warmachinezzstar": {},
+ "wazir": {},
+ "wazirdababaalfil": {},
+ "wazirferz": {},
+ "wazirx4ne": {},
+ "wazirx4nw": {},
+ "wazirx4se": {},
+ "wazirx4sw": {},
+ "weakpawn": {},
+ "wideknight": {},
+ "wildebeest": {},
+ "wildebeest2": {},
+ "windmill": {},
+ "wingedamazon": {},
+ "wingedcardinal": {},
+ "withdrawer": {},
+ "wizzen": {},
+ "wuss": {},
+ "wwall": {},
+ "xqpp": {},
+ "yellowbishop": {},
+ "yellowpawn": {},
+ "zebra": {},
+ "zebracamel": {},
+ "zebracamelrider": {},
+ "zebraferz": {},
+ "zebrarider": {},
+ "zebrariderq": {},
+ "zebrastar": {},
+ "zebrawazir": {},
+ "zebrazzmoon": {},
+ "zigzaggeneral": {},
+ "zigzaggeneral2": {}
 }
