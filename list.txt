@@ -66,6 +66,7 @@ barc
 barc2
 barcrider
 bat
+battlement
 berolinapawn
 betzancrab
 bigbertha
@@ -75,6 +76,7 @@ bird2
 bishop
 bishop135ccw
 bishop135cw
+bishop2
 bishop45ccw
 bishop45cw
 bishop90ccw
@@ -84,6 +86,8 @@ bishopknight2
 bishoppawn
 bishopwarmachine
 bishopwarmachinerider
+blindmonkey
+blindtiger
 block
 blueking
 bluepawn
@@ -125,6 +129,7 @@ cardinalriderq
 carronade
 catfish
 cavalier
+cavalry
 cbbishop
 cbjcamelking
 cbknight
@@ -141,10 +146,12 @@ chancellorrider
 chancellorriderq
 chancellorwazir
 chariot
+chinesecock
 chinesepawn
 chunin_gobetween
 circle
 circlesmall
+coiledserpent
 combine
 coordinator
 coppergeneral
@@ -181,8 +188,10 @@ d_ferz
 d_wazir
 dababbarider
 darter
+deacon
 demon
 diplomat
+diplomat2
 direknight
 doubleactualizeddabbaba
 doubleactualizedpotentialbishop
@@ -201,6 +210,7 @@ dozer
 dragon
 dragon2
 drunkelephant
+drunkelephant2
 ducaqueen
 ducaterror
 duchess
@@ -215,6 +225,7 @@ elephant2zz2
 elephant2zz3
 elephant2zz4
 elephant2zz5
+elephant2zzup1
 elephantcamel
 elephantcamelrider
 elephantferz
@@ -233,13 +244,19 @@ elephantstar
 elephantwarmachine
 elephantwarmachinerider
 elephantwarmachinewazir
+elephantwarmachinezzmoon
+elephantwarzz1
+elephantwarzz2
 elephantwazir
 elephanty
 elephantzzmoon
 elephantzzstar
+elephantzzup1
 empress2
 envoy
+envoy2
 equesrex
+evilwolf
 ewall
 faalcon
 falcon
@@ -247,6 +264,7 @@ falcon2
 falcong
 fbishopbnight
 fbishopbrook
+ferociousleopard
 ferz
 ferz2
 ferzb
@@ -275,6 +293,8 @@ fourfer
 fourleaper
 fqueenbknight
 freeleaperpawn
+friend
+friendlyorphan
 frog
 frookbbishop
 frookbknight
@@ -289,6 +309,7 @@ ganypikeman
 ganyroc
 general
 general2
+general3
 genscher
 giraffe
 giraffeferz
@@ -301,10 +322,12 @@ gnohmon
 goldgeneral
 goose
 gorgona
+gorgona2
 grandrook
 grasshopper
 grasshopperzzstar
 greatwarmachinewazir
+greatwarmachinewazirzz2
 greenpawn
 greenqueen
 gryphg
@@ -328,10 +351,13 @@ hannibal
 hansha_reversechariot
 harvester
 hasdrubal
+hero
+hero2
 herowarmachinewazir
 hexagon
 highpriest_ess
 highpriestess
+highpriestess2
 highpriestess2ferz
 higyu_flyingox
 hiju_soaringeagle
@@ -352,6 +378,8 @@ hunterg
 hydra
 hydrarider
 immobilizer
+irongeneral
+juggernaut
 jumpinggeneral
 jumpinggeneral2
 kakuo_hornedfalcon
@@ -387,8 +415,10 @@ knightrev
 knightsiegeengine
 knightsiegeenginerider
 knightwarmachine
+knightwarmachine2
 knightwarmachinerider
 knightwarmachinewazir
+knightwarmachinewazir2
 knightwazir
 knightwazirwarmachine
 knightzzlight1
@@ -431,6 +461,7 @@ marshal2
 mastodon
 meatball
 medusa
+medusa2
 mini_rose
 minister
 minister2
@@ -472,6 +503,7 @@ offremotesensorenemy
 offremotesensorfriend
 offremotesensormega
 ogyo_sidemover
+oldmonkey
 oliphant
 onediamondbishop
 onediamondqueen
@@ -480,6 +512,8 @@ optingpawn
 orangeknight
 orangepawn
 orphan
+orphanfriend
+orphanlyfriend
 orphanpawn
 ox
 paladin
@@ -487,6 +521,7 @@ paladin2
 panda
 paovao
 parallelgeneral
+parapet
 pawn
 pawn135ccw
 pawn135cw
@@ -532,6 +567,7 @@ r4
 r4ferz
 ram
 reaper
+recliningdragon
 redpawn
 redrook
 reflectingbishop
@@ -626,12 +662,14 @@ squirrelrider
 sspearman
 steward
 stone
+stonegeneral
 supamaduca
 superguard1
 superguard2
 superguard3
 supermaharajaschah
 swall
+swordsman
 swspearman
 tank
 templar
@@ -669,7 +707,9 @@ warmachineferzrider
 warmachinerider
 warmachineriderwazir
 warmachinewazir
+warmachinezzmoon
 warmachinezzstar
+warmachinezzup1
 wazir
 wazirdababaalfil
 wazirferz
