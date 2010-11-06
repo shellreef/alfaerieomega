@@ -6,12 +6,24 @@
 // http://jstalk.org/
 // http://flyingmeat.com/acorn/
 
-var acorn = JSTalk.application_("Acorn");
+var acorn, index;
 
-// TODO: load index.json
+acorn = JSTalk.application_("Acorn");
+index = JSON.parse([NSString stringWithContentsOfURL: @"index.json".fileURL()]);
 
-var doc = acorn.open("/Users/jeff/games/chess/images/alfaerieomega/bking.gif")
+for (var name in index) {
+    var doc, path;
 
-// TODO: manipulate, new colors, rotations..
+    path = [[NSFileManager defaultManager] currentDirectoryPath]) + "/b"+name+".gif";
 
-doc.dataRepresentationOfType("com.compuserve.gif").writeToFile("/tmp/a.gif")
+    print(path);
+    doc = acorn.open(path);
+
+    // TODO: manipulate, new colors, rotations..
+
+    doc.dataRepresentationOfType("com.compuserve.gif").writeToFile("/tmp/a"+name+".gif");
+
+    doc.close();
+}
+
+
