@@ -97,7 +97,7 @@ def saveImage(image, filename):
 
 def getPieceIndex():
     """Get the index of pieces, generating if needed."""
-    if os.path.exists(INDEX_FILE):
+    if False and os.path.exists(INDEX_FILE):
         available = json.loads(file(INDEX_FILE).read())
     else:
         files = os.listdir(".")
@@ -128,7 +128,7 @@ def getPieceIndex():
             byColor[prefix][name] = True
             byName[name].append(prefix)
 
-        #print [(name, colors) for name, colors in byName.iteritems() if len(colors) < 2]
+        print " ".join([colors[0] + name + ".gif" for name, colors in byName.iteritems() if len(colors) < 2])
 
         # Available piece names
         available = [name for name, colors in byName.iteritems() if "b" in colors and "w" in colors]
