@@ -6,14 +6,16 @@
 
 import pprint
 import os
+import json
 import Image
+
+INDEX_FILE = "index.json"
 
 # b*.gif standardize on this blue
 BLUE = "#5984bd"
 
 def main():
-    names = availablePieces()
-    print "Loaded %s pieces" % (len(names),)
+    names = getPieceIndex()
     for name in names:
         bImage = Image.open("b" + name + ".gif")
         wImage = Image.open("w" + name + ".gif")
@@ -93,40 +95,51 @@ def saveImage(image, filename):
         kwargs = {}
     image.save(filename, **kwargs)
 
-def availablePieces():
-    # TODO: Instead of all this directory junk, read an index (issue #6)
-    files = os.listdir(".")
-    byColor = {}
-    byName = {}
-    for filename in files:
-        if filename.startswith("gr"):
-            prefix = "gr"
-            rest = filename[2:]
-        elif filename.startswith("lb"):
-            prefix = "lb"
-            rest = filename[2:]
-        else:
-            prefix = filename[0]
-            rest = filename[1:]
+def getPieceIndex():
+    """Get the index of pieces, generating if needed."""
+    if os.path.exists(INDEX_FILE):
+        available = json.loads(file(INDEX_FILE).read())
+    else:
+        files = os.listdir(".")
+        byColor = {}
+        byName = {}
+        for filename in files:
+            if filename.startswith("gr"):
+                prefix = "gr"
+                rest = filename[2:]
+            elif filename.startswith("lb"):
+                prefix = "lb"
+                rest = filename[2:]
+            else:
+                prefix = filename[0]
+                rest = filename[1:]
 
-        if "." not in rest:
-            continue
-        name, suffix = rest.rsplit(".", 1)
-        if suffix != "gif":
-            continue
+            if "." not in rest:
+                continue
+            name, suffix = rest.rsplit(".", 1)
+            if suffix != "gif":
+                continue
 
-        if not byColor.has_key(prefix):
-            byColor[prefix] = {}
-        if not byName.has_key(name):
-            byName[name] = []
+            if not byColor.has_key(prefix):
+                byColor[prefix] = {}
+            if not byName.has_key(name):
+                byName[name] = []
 
-        byColor[prefix][name] = True
-        byName[name].append(prefix)
+            byColor[prefix][name] = True
+            byName[name].append(prefix)
 
-    #print [(name, colors) for name, colors in byName.iteritems() if len(colors) < 2]
+        #print [(name, colors) for name, colors in byName.iteritems() if len(colors) < 2]
 
-    # Available pieces
-    return [name for name, colors in byName.iteritems() if "b" in colors and "w" in colors]
+        # Available piece names
+        available = [name for name, colors in byName.iteritems() if "b" in colors and "w" in colors]
+
+        # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
+
+        file(INDEX_FILE, "w").write(json.dumps(available))
+
+    print "Loaded %s pieces" % (len(available),)
+
+    return available
 
 if __name__ == "__main__":
     main()
