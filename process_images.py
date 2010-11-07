@@ -30,18 +30,36 @@ def main():
         if blue is None:
             print "Warning: missing blue (%s):" % (BLUE,), "b"+name+".gif"
 
+        print "FOO"
+
         #print "@",top
 
-        def replace(pixel):
-            if pixel == blue:
-                return 255
-            else:
-                return pixel
+        #def replace(pixel):
+        #    if pixel == blue:
+        #        return 255
+        #    else:
+        #        return pixel
+        #new = bImage.point(replace)
 
-        new = bImage.point(replace)
-        saveImage(new, "/tmp/test/r" + name + ".gif")
+        img = bImage.convert("RGBA")
+        count = 0
+        width, height = img.size
+        for px in img.getdata():
+            print "PIXEL",px,colorToHex(px)[0:7]
+            if colorToHex(px)[0:7] == BLUE:
+                img.putpixel((int(count % width), int(count / width)), (0, 255, 0, px[3]))
+            count += 1
+
+
+        # Convert back to palettized image
+        # http://effbot.org/tag/PIL.Image.Image.convert
+        img = img.convert("P", dither=Image.NONE)
+        saveImage(img, "/tmp/test/r" + name + ".gif")
+        print name
+        raise SystemExit
 
 def indexForColor(image, rgb):
+    """Get the palette index for an RGB color."""
     indexToRGB = colorPalette(image)
     rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
 
@@ -84,9 +102,34 @@ def colorPalette(image):
     colors = [map(ord, bytes) for bytes in chunk(palette, 3)]
 
     # Convert to HTML-like #rrggbb for ease of use
-    hexColors = ["#" + "".join(map(lambda octet: "%.2x" % (octet,), rgb)) for rgb in colors]
+    hexColors = [colorToHex(rgb) for rgb in colors]
 
     return hexColors
+
+def colorToHex(rgb):
+    """ Convert an RGB 3-tuple to a hexdecimal string.
+
+    >>> colorToHex((1, 2, 3))
+    '#010203'
+    """
+    return "#" + "".join(map(lambda octet: "%.2x" % (octet,), rgb))
+
+def hexToColor(s):
+    """Convert a hexadecimal string to a 3-tuple of RGB.
+    >>> hexToColor("#01ff80")
+    (1, 255, 128)
+    """
+
+    if s[0] == "#":
+        s = s[1:]
+
+    r = int(s[0:2], 16)
+    g = int(s[2:4], 16)
+    b = int(s[4:6], 16)
+
+    return r, g, b
+
+
 
 def saveImage(image, filename):
     if image.info.has_key("transparency"):
