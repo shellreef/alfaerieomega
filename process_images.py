@@ -15,8 +15,12 @@ INDEX_FILE = "index.json"
 # b*.gif standardize on this blue
 BLUE = "#5984bd"
 
-# Code for transparency (bright yellow, no one should use that)
-TRANSPARENT = "#ffff99"
+# Temporary RGB color for transparency (bright yellow, no one should use that)
+TEMP_TRANSPARENT = "#ffff99"
+
+# Temporary RGB color for black
+TEMP_BLACK = "#ffffcc"
+
 
 OTHER_COLORS = {
         #"w": "#fffffff",   # white 
@@ -46,9 +50,6 @@ def main():
     index = updatePieceIndex()
     writeIndexDocuments(index)
 
-    #processPiece("1bishop")
-    #processPiece("1dgold")
-    #raise SystemExit
     for name in sorted(index.keys()):
         processPiece(name)
 
@@ -85,9 +86,38 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     newColor = hexToColor(newColorHex)
 
     img = bImage.convert("RGBA")
-    count = 0
     width, height = img.size
 
+    if rotation:
+        if rotation % 90 != 0:
+            # Ugly hack 2: non-orthogonal degree rotations create black corners, when we want transparent
+            # Replace black with a temporary color to distinguish it from the black corners
+            count = 0
+            width, height = img.size
+            for px in img.getdata():
+                if colorToHex(px)[0:7] == "#000000":
+                    img.putpixel((int(count % width), int(count / width)), hexToColor(TEMP_BLACK) + (255,))
+                count += 1
+
+        
+        # TODO: what filter? NEAREST, BILINEAR, BICUBIC?
+        # TODO: can img.info["background"] solve the black corner problem cleaner than temporary color replacement?
+        img = img.rotate(rotation)
+
+        if rotation % 90 != 0:
+            # Replace temporary black with black, and black (from corner rotations) with temporary transparent
+            count = 0
+            width, height = img.size
+            for px in img.getdata():
+                if colorToHex(px)[0:7] == TEMP_BLACK:
+                    img.putpixel((int(count % width), int(count / width)), hexToColor("#000000") + (255,))
+                elif colorToHex(px)[0:7] == "#000000":
+                    img.putpixel((int(count % width), int(count / width)), hexToColor(TEMP_TRANSPARENT) + (0,))
+                count += 1
+
+
+    count = 0
+    width, height = img.size
     for px in img.getdata():
         # The main color substitution
         if colorToHex(px)[0:7] == BLUE:
@@ -101,13 +131,10 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
         # If zero alpha, then replace with a color we can recognize as transparent
         if px[3] == 0:
             # Bright yellow, no one should use that
-            img.putpixel((int(count % width), int(count / width)), hexToColor(TRANSPARENT) + (0,))
+            img.putpixel((int(count % width), int(count / width)), hexToColor(TEMP_TRANSPARENT) + (0,))
 
         count += 1
 
-    if rotation:
-        # TODO: what filter? NEAREST, BILINEAR, BICUBIC?
-        img = img.rotate(rotation)
 
     # Convert back to palettized image
     # http://effbot.org/tag/PIL.Image.Image.convert
@@ -116,7 +143,7 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     # Ugly hack. Conversion loses the transparent color index for some reason.
     # We could try to save the RGB of the transparent color, but conversion
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
-    img.info["transparency"] = indexForColor(img, TRANSPARENT)
+    img.info["transparency"] = indexForColor(img, TEMP_TRANSPARENT)
 
     saveImage(img, newFilename)
     print "Creating variant:", newFilename
