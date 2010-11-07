@@ -8,11 +8,15 @@ import pprint
 import os
 import json
 import Image
+import ImageOps
 
 INDEX_FILE = "index.json"
 
 # b*.gif standardize on this blue
 BLUE = "#5984bd"
+
+# Code for transparency (bright yellow, no one should use that)
+TRANSPARENT = "#ffff99"
 
 OTHER_COLORS = {
         #"w": "#fffffff",   # white 
@@ -63,15 +67,21 @@ def makeColorVariant(bImage, name, newColorHex, prefix):
     img = bImage.convert("RGBA")
     count = 0
     width, height = img.size
+
     for px in img.getdata():
+        # The main color substitution
         if colorToHex(px)[0:7] == BLUE:
             newColorAlpha = newColor + (px[3],)
             img.putpixel((int(count % width), int(count / width)), newColorAlpha)
 
+        # Special case: black pieces need a white outline
+        if prefix == "k" and colorToHex(px)[0:7] == "#000000":
+            img.putpixel((int(count % width), int(count / width)), hexToColor("#ffffff") + (255,))
+
         # If zero alpha, then replace with a color we can recognize as transparent
         if px[3] == 0:
             # Bright yellow, no one should use that
-            img.putpixel((int(count % width), int(count / width)), hexToColor("#ffff99") + (0,))
+            img.putpixel((int(count % width), int(count / width)), hexToColor(TRANSPARENT) + (0,))
 
         count += 1
 
@@ -82,7 +92,7 @@ def makeColorVariant(bImage, name, newColorHex, prefix):
     # Ugly hack. Conversion loses the transparent color index for some reason.
     # We could try to save the RGB of the transparent color, but conversion
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
-    img.info["transparency"] = indexForColor(img, "#ffff99")
+    img.info["transparency"] = indexForColor(img, TRANSPARENT)
 
     saveImage(img, "generated/" + prefix + name + ".gif")
     print prefix, name
