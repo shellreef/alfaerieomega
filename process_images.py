@@ -65,9 +65,8 @@ def makeColorVariant(bImage, name, newColor, prefix):
 
         # If zero alpha, then replace with a color we can recognize as transparent
         if px[3] == 0:
-            # TODO: Use a different color; this conflicts with some pieces that use gray
-            # for their own purposes (zigzaggeneral)
-            img.putpixel((int(count % width), int(count / width)), (192, 192, 192, 0))
+            # Bright yellow, no one should use that
+            img.putpixel((int(count % width), int(count / width)), hexToColor("#ffff99") + (0,))
 
         count += 1
 
@@ -78,7 +77,7 @@ def makeColorVariant(bImage, name, newColor, prefix):
     # Ugly hack. Conversion loses the transparent color index for some reason.
     # We could try to save the RGB of the transparent color, but conversion
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
-    img.info["transparency"] = indexForColor(img, "#cccccc")
+    img.info["transparency"] = indexForColor(img, "#ffff99")
 
     saveImage(img, "/tmp/test/" + prefix + name + ".gif")
     print name
