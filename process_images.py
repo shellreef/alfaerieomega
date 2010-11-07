@@ -19,56 +19,66 @@ def main():
     writeIndexDocuments(index)
 
     for name in sorted(index.keys()):
-        bImage = Image.open("b" + name + ".gif")
-        wImage = Image.open("w" + name + ".gif")
+        processPiece(name)
 
-        #top = topColorIndex(bImage)
-        #pal = colorPalette(bImage)
-        #print pal[top]
+def processPiece(name):
+    bImage = Image.open("b" + name + ".gif")
+    wImage = Image.open("w" + name + ".gif")
 
-        blue = indexForColor(bImage, BLUE)
-        if blue is None:
-            print "Warning: missing blue (%s):" % (BLUE,), "b"+name+".gif"
+    #top = topColorIndex(bImage)
+    #pal = colorPalette(bImage)
+    #print pal[top]
 
+    blue = indexForColor(bImage, BLUE)
+    if blue is None:
+        print "Warning: missing blue (%s):" % (BLUE,), "b"+name+".gif"
 
-        #print "@",top
-
-        #def replace(pixel):
-        #    if pixel == blue:
-        #        return 255
-        #    else:
-        #        return pixel
-        #new = bImage.point(replace)
-
-        #print "TRANS=",bImage.info.get("transparency")
-        img = bImage.convert("RGBA")
-        #print "TRANS=",bImage.info.get("transparency")
-        count = 0
-        width, height = img.size
-        transparentColors = []
-        for px in img.getdata():
-            #print "PIXEL",px,colorToHex(px)
-            if colorToHex(px)[0:7] == BLUE:
-                img.putpixel((int(count % width), int(count / width)), (0, 255, 0, px[3]))
-
-            # Take note of the alpha channel
-            if px[3] == 0 and px[0:3] not in transparentColors:
-                transparentColors.append(px[0:3])
-
-            count += 1
+    makeColorVariant(bImage, name, (0, 255, 0), "g")
 
 
-        # Convert back to palettized image
-        # http://effbot.org/tag/PIL.Image.Image.convert
-        img = img.convert("P", dither=Image.NONE) #, palette=Image.ADAPTIVE)   # ADAPTIVE fails with: Image: wrong mode
-       
-        # Ugly hack. Conversion loses the transparent color index for some reason.
-        # We could try to save the RGB of the transparent color, but conversion
-        # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
-        img.info["transparency"] = indexForColor(img, "#cccccc")
+def makeColorVariant(bImage, name, newColor, prefix):
+    """Make a new color variant image of a piece by replacing all blue
+    pixels in the blue piece image."""
+    
+    #print "@",top
 
-        saveImage(img, "/tmp/test/g" + name + ".gif")
-        print name
+    #def replace(pixel):
+    #    if pixel == blue:
+    #        return 255
+    #    else:
+    #        return pixel
+    #new = bImage.point(replace)
+
+    #print "TRANS=",bImage.info.get("transparency")
+    img = bImage.convert("RGBA")
+    #print "TRANS=",bImage.info.get("transparency")
+    count = 0
+    width, height = img.size
+    transparentColors = []
+    for px in img.getdata():
+        #print "PIXEL",px,colorToHex(px)
+        if colorToHex(px)[0:7] == BLUE:
+            newColorAlpha = newColor + (px[3],)
+            img.putpixel((int(count % width), int(count / width)), newColorAlpha)
+
+        # Take note of the alpha channel
+        if px[3] == 0 and px[0:3] not in transparentColors:
+            transparentColors.append(px[0:3])
+
+        count += 1
+
+
+    # Convert back to palettized image
+    # http://effbot.org/tag/PIL.Image.Image.convert
+    img = img.convert("P", dither=Image.NONE) #, palette=Image.ADAPTIVE)   # ADAPTIVE fails with: Image: wrong mode
+   
+    # Ugly hack. Conversion loses the transparent color index for some reason.
+    # We could try to save the RGB of the transparent color, but conversion
+    # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
+    img.info["transparency"] = indexForColor(img, "#cccccc")
+
+    saveImage(img, "/tmp/test/" + prefix + name + ".gif")
+    print name
 
 def indexForColor(image, rgb):
     """Get the palette index for an RGB color."""
