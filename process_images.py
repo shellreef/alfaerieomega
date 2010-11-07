@@ -14,6 +14,19 @@ INDEX_FILE = "index.json"
 # b*.gif standardize on this blue
 BLUE = "#5984bd"
 
+OTHER_COLORS = {
+        #"w": "#fffffff",   # white 
+        #"b": BLUE,         # blue ("black player")
+        "y": "#ffff00",     # yellow (third player on http://myweb.tiscali.co.uk/ins.chess/varns/4H.htm)
+        "r": "#ff0000",     # red (fourth player)
+        "g": "#00ff00",     # green
+        "c": "#00ffff",     # cyan
+        "o": "#ff8000",     # orange
+        "p": "#ff00ff",     # pink
+        "e": "#cccccc",     # grey
+        "k": "#000000",     # black (true)
+        }
+
 def main():
     index = updatePieceIndex()
     writeIndexDocuments(index)
@@ -36,29 +49,21 @@ def processPiece(name):
     if blue is None:
         print "Warning: missing blue (%s):" % (BLUE,), "b"+name+".gif"
 
-    makeColorVariant(bImage, name, (0, 255, 0), "g")
+    for prefix in OTHER_COLORS:
+        color = OTHER_COLORS[prefix]
+        makeColorVariant(bImage, name, color, prefix)
+    
 
-
-def makeColorVariant(bImage, name, newColor, prefix):
+def makeColorVariant(bImage, name, newColorHex, prefix):
     """Make a new color variant image of a piece by replacing all blue
     pixels in the blue piece image."""
-    
-    #print "@",top
+   
+    newColor = hexToColor(newColorHex)
 
-    #def replace(pixel):
-    #    if pixel == blue:
-    #        return 255
-    #    else:
-    #        return pixel
-    #new = bImage.point(replace)
-
-    #print "TRANS=",bImage.info.get("transparency")
     img = bImage.convert("RGBA")
-    #print "TRANS=",bImage.info.get("transparency")
     count = 0
     width, height = img.size
     for px in img.getdata():
-        #print "PIXEL",px,colorToHex(px)
         if colorToHex(px)[0:7] == BLUE:
             newColorAlpha = newColor + (px[3],)
             img.putpixel((int(count % width), int(count / width)), newColorAlpha)
@@ -79,8 +84,8 @@ def makeColorVariant(bImage, name, newColor, prefix):
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
     img.info["transparency"] = indexForColor(img, "#ffff99")
 
-    saveImage(img, "/tmp/test/" + prefix + name + ".gif")
-    print name
+    saveImage(img, "generated/" + prefix + name + ".gif")
+    print prefix, name
 
 def indexForColor(image, rgb):
     """Get the palette index for an RGB color."""
