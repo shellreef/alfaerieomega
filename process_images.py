@@ -18,6 +18,9 @@ def main():
     index = updatePieceIndex()
     writeIndexDocuments(index)
 
+    #processPiece("1bishop")
+    #processPiece("1dgold")
+    #raise SystemExit
     for name in sorted(index.keys()):
         processPiece(name)
 
@@ -54,24 +57,24 @@ def makeColorVariant(bImage, name, newColor, prefix):
     #print "TRANS=",bImage.info.get("transparency")
     count = 0
     width, height = img.size
-    transparentColors = []
     for px in img.getdata():
         #print "PIXEL",px,colorToHex(px)
         if colorToHex(px)[0:7] == BLUE:
             newColorAlpha = newColor + (px[3],)
             img.putpixel((int(count % width), int(count / width)), newColorAlpha)
 
-        # Take note of the alpha channel
-        if px[3] == 0 and px[0:3] not in transparentColors:
-            transparentColors.append(px[0:3])
+        # If zero alpha, then replace with a color we can recognize as transparent
+        if px[3] == 0:
+            # TODO: Use a different color; this conflicts with some pieces that use gray
+            # for their own purposes (zigzaggeneral)
+            img.putpixel((int(count % width), int(count / width)), (192, 192, 192, 0))
 
         count += 1
-
 
     # Convert back to palettized image
     # http://effbot.org/tag/PIL.Image.Image.convert
     img = img.convert("P", dither=Image.NONE) #, palette=Image.ADAPTIVE)   # ADAPTIVE fails with: Image: wrong mode
-   
+ 
     # Ugly hack. Conversion loses the transparent color index for some reason.
     # We could try to save the RGB of the transparent color, but conversion
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
