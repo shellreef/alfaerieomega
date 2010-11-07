@@ -23,6 +23,7 @@ for name in sorted(index.keys()):
     # TODO: apply color filter (doFilterName_)
     # TODO: save 
     doc.saveIn_as_("/tmp/a.gif", 0)
+    doc.close()
 
     raise SystemExit
 
