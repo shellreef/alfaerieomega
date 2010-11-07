@@ -31,6 +31,17 @@ OTHER_COLORS = {
         "k": "#000000",     # black (true)
         }
 
+OTHER_ROTATIONS = {
+        "": None,
+        "45ccw": 45,
+        "90ccw": 90,
+        "135ccw": 135,
+        "inv": 180,
+        "45cw": 360 - 45,
+        "90cw": 360 - 90,
+        "135cw": 360 - 135,
+        }
+
 def main():
     index = updatePieceIndex()
     writeIndexDocuments(index)
@@ -55,15 +66,19 @@ def processPiece(name):
 
     for prefix in OTHER_COLORS:
         color = OTHER_COLORS[prefix]
-        makeColorVariant(bImage, name, color, prefix)
+
+        for suffix in OTHER_ROTATIONS:
+            rotation = OTHER_ROTATIONS[suffix]
+
+            makeVariant(bImage, name, color, rotation, prefix, suffix)
     
 
-def makeColorVariant(bImage, name, newColorHex, prefix):
+def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     """Make a new color variant image of a piece by replacing all blue
     pixels in the blue piece image."""
  
     # Skip creation if already exists (to recreate, delete)
-    newFilename = "generated/" + prefix + name + ".gif"
+    newFilename = "generated/" + prefix + name + suffix + ".gif"
     if os.path.exists(newFilename):
         return
 
@@ -90,6 +105,10 @@ def makeColorVariant(bImage, name, newColorHex, prefix):
 
         count += 1
 
+    if rotation:
+        # TODO: what filter? NEAREST, BILINEAR, BICUBIC?
+        img = img.rotate(rotation)
+
     # Convert back to palettized image
     # http://effbot.org/tag/PIL.Image.Image.convert
     img = img.convert("P", dither=Image.NONE) #, palette=Image.ADAPTIVE)   # ADAPTIVE fails with: Image: wrong mode
@@ -100,7 +119,7 @@ def makeColorVariant(bImage, name, newColorHex, prefix):
     img.info["transparency"] = indexForColor(img, TRANSPARENT)
 
     saveImage(img, newFilename)
-    print "Creating color variant:", newFilename
+    print "Creating variant:", newFilename
 
 def indexForColor(image, rgb):
     """Get the palette index for an RGB color."""
