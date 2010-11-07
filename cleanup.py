@@ -3,6 +3,9 @@
 import json
 d = json.loads(file("index.json").read())
 for k in d:
+    if d[k].has_key("credit"):
+        continue
+
     if d[k]["set"] in ("Alfaerie", "Alfaerie Expansion Set 1", "Alfaerie Expansion Set 2"):
         d[k]["credit"] = "David Howe"
     elif d[k]["set"] == "Alfaerie Expansion Set 3":
@@ -38,5 +41,10 @@ for k in d:
             d[k]["credit"] = "Christine Bagley-Jones"
     elif d[k]["set"] == "Alfaerie Expansion Set 6":
         d[k]["credit"] = "Matthew La Vallee"
+    # These weren't clearly marked with the designer.. corrections welcome
+    elif d[k]["set"].startswith("Alfaerie Misc") or d[k]["set"] == "Alfaerie Plus":
+        d[k]["credit"] = "ChessVariants"
+    elif d[k]["set"] == "Alfaerie Beta":
+        d[k]["credit"] = "Jeff Connelly"
 
 file("index.json","w").write(json.dumps(d))
