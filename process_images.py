@@ -61,7 +61,12 @@ def processPiece(name):
 def makeColorVariant(bImage, name, newColorHex, prefix):
     """Make a new color variant image of a piece by replacing all blue
     pixels in the blue piece image."""
-   
+ 
+    # Skip creation if already exists (to recreate, delete)
+    newFilename = "generated/" + prefix + name + ".gif"
+    if os.path.exists(newFilename):
+        return
+
     newColor = hexToColor(newColorHex)
 
     img = bImage.convert("RGBA")
@@ -94,8 +99,8 @@ def makeColorVariant(bImage, name, newColorHex, prefix):
     # changes the RGB, too! (#c0c0c0 -> #cccccc), since it uses a 216-color web palette
     img.info["transparency"] = indexForColor(img, TRANSPARENT)
 
-    saveImage(img, "generated/" + prefix + name + ".gif")
-    print prefix, name
+    saveImage(img, newFilename)
+    print "Creating color variant:", newFilename
 
 def indexForColor(image, rgb):
     """Get the palette index for an RGB color."""
