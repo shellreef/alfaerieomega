@@ -5,24 +5,42 @@
 <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.0/mootools-yui-compressed.js"></script>
 <script>
-function load() 
+function init() 
 {
     var req;
     
-    req = new Request.JSON({url:"index.json", 
+    req = new Request.JSON({method:"get", url:"index.json", 
             onSuccess:function(response) {
-                console.log(response);
+                loadLibrary(response);
             },
-            onFailure:function(response) {
-                console.log("failed",response);
+            onFailure:function(response,value) {
+                console.log("failed to fetch index",response,value);
+            },
+
+            // I really don't know why I have to do this
+            isSuccess:function() {
+                return true;
             }
         });
     req.get();
-    console.log(req);
 }
+
+function loadLibrary(index)
+{
+    var html = "";
+    for (var name in index) {
+        var info = index[name];
+
+        // TODO: make not suck
+        html += "<img src=w"+name+".gif><img src=b"+name+".gif>" + name +"<br>";
+        console.log(name,info);
+    }
+    document.getElementById("s").innerHTML = html;
+}
+// TODO: fancy searchable browser
 </script>
 </head>
-<body onload="load()">
-
+<body onload="init()">
+<span id="s"></span>
 </body>
 </html>
