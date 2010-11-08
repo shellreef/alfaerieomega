@@ -2,11 +2,23 @@
 <html>
 <head>
 <title>Alfaerie Omega: Browser</title>
-<script src="http://www.google.com/jsapi"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.0/mootools-yui-compressed.js"></script>
 <script>
 function load() 
 {
-    google.load("mootools", "1.3.0");
+    var req;
+    
+    req = new Request.JSON({url:"index.json", 
+            onSuccess:function(response) {
+                console.log(response);
+            },
+            onFailure:function(response) {
+                console.log("failed",response);
+            }
+        });
+    req.get();
+    console.log(req);
 }
 </script>
 </head>
