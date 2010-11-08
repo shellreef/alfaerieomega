@@ -86,7 +86,6 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     newColor = hexToColor(newColorHex)
 
     img = bImage.convert("RGBA")
-    width, height = img.size
 
     if rotation:
         if rotation % 90 != 0:
@@ -95,7 +94,7 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
             count = 0
             width, height = img.size
             for px in img.getdata():
-                if colorToHex(px)[0:7] == "#000000":
+                if colorToHex(px)[0:7] == "#000000" and px[3] == 255:
                     img.putpixel((int(count % width), int(count / width)), hexToColor(TEMP_BLACK) + (255,))
                 count += 1
 
