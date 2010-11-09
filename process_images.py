@@ -77,9 +77,17 @@ def processPiece(name):
 def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     """Make a new color variant image of a piece by replacing all blue
     pixels in the blue piece image."""
- 
+
+    if rotation is None:
+        folder = "generated-colors/"
+    else:
+        # Less useful, so stash away
+        folder = "generated-rotations/" 
+
+
+    newFilename = folder + prefix + name + suffix + ".gif"
+
     # Skip creation if already exists (to recreate, delete)
-    newFilename = "generated/" + prefix + name + suffix + ".gif"
     if os.path.exists(newFilename):
         return
 

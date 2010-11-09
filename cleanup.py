@@ -3,48 +3,29 @@
 import json
 d = json.loads(file("index.json").read())
 for k in d:
-    if d[k].has_key("credit"):
-        continue
+    tags = d[k].get("tags", [])
+    if k in ("king", "queen", "rook", "bishop", "knight", "pawn"):
+        tags.append("fide")
+    if k.endswith("inv") or k.endswith("ccw") or k.endswith("cw"):
+        tags.append("rotated")
+    if k in ("camel", "giraffe", "lion", "unicorn", "grasshopper", "ram", "ox", "gryphon", "squirrel", "dragon", "rhino", "zebra", "pegasus", "bird", "bird2", "tiger", "kangaroo",
+            "butterfly", "lizard", "monkey", "spider", "crab2", "panda", "wildebeest", "wildebeest2", "bat", "highpriestess", "oliphant", "frog", "grasshopper2") or "camel" in k \
+                    or "elephant" in k or "highpriest" in k or "giraffe" in k or "horse" in k:
+        tags.append("animal")
+    if k in ("tank", "airplane", "rocket", "bulldozer", "gun"):
+        tags.append("modern")
+    if k.startswith("half") or k in ("narrowknight", "wideknight", "crab", "barc", "1bishop", "1bishop2", "1rook"):
+        tags.append("diminished")
+    if k in ("horse", "elephant", "cannon", "vao", "chinesepawn", "moo", "moa", "mao"):
+        tags.append("chinese")
+    if k in ("goldgeneral", "silvergeneral", "horse", "lance", "pawn", "dragonking", "dragonhorse", "promotedsilvergeneral", "promotedhorse", "promotedpawn"):
+        tags.append("japanese")
+    if k in ("blindmonkey", "blindtiger", "chinesecock", "coiledserpent", "drunkenelephant", "evilwolf", "ferociousleopard",
+            "irongeneral", "oldmonkey", "recliningdragon", "stonegeneral", "tilegeneral"):
+        tags.append("japanese")
+    if k in ("faalcon", "falcon", "falcon2", "bird", "flyingkingfisher", "wader", "bird2"):
+        tags.append("avian")
 
-    if d[k]["set"] in ("Alfaerie", "Alfaerie Expansion Set 1", "Alfaerie Expansion Set 2"):
-        d[k]["credit"] = "David Howe"
-    elif d[k]["set"] == "Alfaerie Expansion Set 3":
-        if k in ("wildebeest2", "cardinal2", "cavalier", "crusader", "diplomat", "duchess", 
-                "empress2", "envoy", "gorgona", "marshal2", "medusa", "minister2", "paladin2", 
-                "viceroy"):
-            d[k]["credit"] = "Michael Howe"
-        else:
-            d[k]["credit"] = "David Howe"
-    elif d[k]["set"] == "Alfaerie Expansion Set 4":
-        if k == "frog":
-            d[k]["credit"] = "Tucker Kao"
-        elif k == "coppergeneral":
-            d[k]["credit"] = "Peter Aronson"
-        elif k == "templar":
-            d[k]["credit"] = "Adrian Alvarez de la Campa"
-        elif k == "elephantwarmachinerider":
-            d[k]["credit"] = "Larry Wheeler"
-        elif k in ("jumpinggeneral", "highpriestess", "knightwarmachinewazir", "knightwarmachine",
-                "zigzaggeneral", "lightningwarmachine", "oliphant", "flexibleknight", "slidinggeneral"):
-            d[k]["credit"] = "Joe Joyce and Peter Joyce"
-        else:
-            d[k]["credit"] = "Christine Bagley-Jones"
-    elif d[k]["set"] == "Alfaerie Expansion Set 5":
-        if k in ("battlement", "bishop2", "cavalry", "dDeacon", "diplomat2",
-                "envoy2", "general3", "gorgona2", "hero", "hero2", "juggernaut", "medusa2", "parapet", "swordsman"):
-            d[k]["credit"] = "Michael Howe"
-        elif k in ("friend", "friendlyorphan", "orphanfriend"):
-            d[k]["credit"] = "Jeremy Good"
-        elif k in ("highpriestess2", "knightwarmachinewazir2", "knightwarmachine2"):
-            d[k]["credit"] = "Joe Joyce"
-        else:
-            d[k]["credit"] = "Christine Bagley-Jones"
-    elif d[k]["set"] == "Alfaerie Expansion Set 6":
-        d[k]["credit"] = "Matthew La Vallee"
-    # These weren't clearly marked with the designer.. corrections welcome
-    elif d[k]["set"].startswith("Alfaerie Misc") or d[k]["set"] == "Alfaerie Plus":
-        d[k]["credit"] = "ChessVariants"
-    elif d[k]["set"] == "Alfaerie Beta":
-        d[k]["credit"] = "Jeff Connelly"
+    d[k]["tags"] = tags
 
 file("index.json","w").write(json.dumps(d))

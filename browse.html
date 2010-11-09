@@ -47,7 +47,6 @@ function update()
         if (name.contains(q)) {
             hits += 1;
 
-            // TODO: make not suck
             for (var i = 0; i < COLORS.length; i += 1) {
                 var color = COLORS[i];
                 var path = "";
@@ -57,7 +56,7 @@ function update()
 
                 html += '<img src="' + path + color + name + '.gif">';
             }
-            html += "<br>";
+            html += name + "<br>";
         }
     }
     document.getElementById("s").innerHTML = html;
@@ -66,7 +65,7 @@ function update()
 </script>
 </head>
 <body>
-<div style="height: 600px; width: 700px">
+<div style="height: 600px; width: 750px">
 <input name="q" id="q" type="search" style="width: 100%" onchange="update()">
 <div style="border: 1px solid black; height: 100%; width: 100%; overflow: auto">
 <span id="s"></span>
