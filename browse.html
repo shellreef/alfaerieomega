@@ -43,8 +43,9 @@ function update()
 
     for (var name in INDEX) {
         var info = INDEX[name];
+        var tags = info.tags;
 
-        if (name.contains(q)) {
+        if (name.contains(q) || (tags && tags.contains(q))) {
             hits += 1;
 
             for (var i = 0; i < COLORS.length; i += 1) {
