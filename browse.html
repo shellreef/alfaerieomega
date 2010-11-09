@@ -7,6 +7,7 @@
 <script>
 var INDEX = null;
 
+// Initialize
 window.addEvent("domready", function() 
 {
     var req, field;
@@ -17,7 +18,8 @@ window.addEvent("domready", function()
 
     req = new Request.JSON({method:"get", url:"index.json", 
             onSuccess:function(response) {
-                loadLibrary(response);
+                INDEX = response;
+                update();
             },
             onFailure:function(response,value) {
                 console.log("failed to fetch index",response,value);
@@ -31,16 +33,7 @@ window.addEvent("domready", function()
     req.get();
 });
 
-function loadLibrary(index)
-{
-    INDEX = index;
-
-    for (var name in index) {
-        var info = index[name];
-
-    }
-}
-
+// Update the search results
 function update()
 {
     var q = document.getElementById("q").value;
@@ -62,13 +55,14 @@ function update()
     }
     document.getElementById("s").innerHTML = html;
 }
-// TODO: fancy searchable browser
 </script>
 </head>
 <body>
-<div style="border: 1px solid black; height: 600px; width: 700px; overflow: auto">
+<div style="height: 600px; width: 700px">
 <input name="q" id="q" type="search" style="width: 100%" onchange="update()">
+<div style="border: 1px solid black; height: 100%; width: 100%; overflow: auto">
 <span id="s"></span>
+</div>
 </div>
 </body>
 </html>
