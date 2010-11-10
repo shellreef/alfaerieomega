@@ -12,6 +12,10 @@ import ScriptingBridge
 
 index = json.loads(file("index.json").read())
 acorn = ScriptingBridge.SBApplication.applicationWithBundleIdentifier_("com.flyingmeat.Acorn")
+
+print acorn.doJavaScript_("print(1)")
+1/0
+
 for name in sorted(index.keys()):
 
     path = os.path.join(os.getcwd(), "b"+name+".gif")
@@ -20,10 +24,12 @@ for name in sorted(index.keys()):
 
     doc.rotateCanvasAngle_(180)
 
+
     # TODO: apply color filter (doFilterName_)
     # TODO: save 
     doc.saveIn_as_("/tmp/a.gif", 0)
     doc.close()
+
 
     raise SystemExit
 

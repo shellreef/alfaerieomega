@@ -158,6 +158,7 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
 def indexForColor(image, rgb):
     """Get the palette index for an RGB color."""
     indexToRGB = colorPalette(image)
+    
     rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
 
     index = rgbToIndex.get(rgb)

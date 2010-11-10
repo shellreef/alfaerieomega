@@ -1,49 +1,37 @@
-// Created:20101106
-// By Jeff Connelly
-
-// JSTalk script to manipulate images
+// JSTalk script to manipulate images using Acorn image editor
 // Requires:
 // http://jstalk.org/
 // http://flyingmeat.com/acorn/
 
-var acorn, index;
+// Run color replacement filter on image
+// Based on example from Flying Meat Support
 
-acorn = JSTalk.application_("Acorn");
-index = JSON.parse([NSString stringWithContentsOfURL: @"index.json".fileURL()]);
+function main(input) {
+   var doc    = Acorn.open(input);
+   var layer  = doc.layers().objectAtIndex(0);
+   var img    = layer.CIImage();
 
-for (var name in index) {
-    var doc, path;
+   // TSReplaceColorFilter is undocumented, but it probably won't change anytime soon.
+   // if you really wanted to, you could write your own CIFitler to do the same, it's not tough.
+   var filter = [CIFilter filterWithName:"TSReplaceColorFilter"];
+   var lookForColor = [CIColor colorWithRed:0.34901960784313724 green:0.5176470588235295 blue:0.7411764705882353 alpha:1];
+   var replaceColor = [CIColor colorWithRed:1 green:0 blue:0 alpha:1]; 
+   var tolerance    = [NSNumber numberWithFloat:32];
 
-    path = [[NSFileManager defaultManager] currentDirectoryPath]) + "/b"+name+".gif";
+   [filter setValue:img          forKey:"inputImage"];
+   [filter setValue:lookForColor forKey:"inputColor"];
+   [filter setValue:replaceColor forKey:"inputColor2"];
+   [filter setValue:tolerance    forKey:"inputTolerance"];
 
-    print(path);
-    doc = acorn.open(path);
-    print(doc)
-    // TODO: how to specify parameters to filtes? This crashes
-    //print(doc.callFilterNamed("CIGaussianBlur",{inputRadius:2}));
-    // TODO: how to call Filter -> Color Adjustment -> Replace Color...?
-    //print(doc.callFilterNamed("Replace Color",{inputRadius:2}));
-    // otool -ov /Applications/Acorn.app/Contents/MacOS/Acorn |grep -i filter
-    // shows there is a TSReplaceColorFilter
-    // which has methods setInputColor:, setInputColor2:
-    // How to call it?
-    //print(doc.callFilterNamed("CIGaussianBlur"));
-    //print(doc.windowController().callFilterWithName_("CIGaussianBlur"));
-    print(doc.windowController().callFilter_("CIGaussianBlur", {"inputRadius":2}));
-    print(doc.windowController());
-    for (var k in doc) {
-        print(k);
-    }
-    //print(doc.imageByApplyingTransform(CGAffineTransformMakeScale(.5, .5)));
-    //print(doc.CIImage());
-
-    // TODO: manipulate, new colors, rotations..
-
-    doc.dataRepresentationOfType("com.compuserve.gif").writeToFile("/tmp/a"+name+".gif");
-
-    doc.close();
-
-    break;
+   [layer applyCIImageFromFilter:[filter valueForKey:"outputImage"]];
 }
 
+if ("com.flyingmeat.Acorn" != [[NSBundle mainBundle] bundleIdentifier]) {
+   // tell Acorn to run this guy via the doJavaScript command!
+   var scriptPath     = [jstalk env].scriptURL.path();
+   var scriptContents = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:null];
+   var arg            = "/tmp/bking.gif";
+
+   [[JSTalk application:"Acorn"] doJavaScript:scriptContents withInput:arg];
+}
 
