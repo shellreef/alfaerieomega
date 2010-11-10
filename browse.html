@@ -41,20 +41,20 @@ function update()
     var hits = 0;
     var html = "";
 
-    for (var name in INDEX) {
-        var info = INDEX[name];
+    for (var id in INDEX) {
+        var info = INDEX[id];
         var tags = info.tags;
 
-        if (name.contains(q) || (tags && tags.contains(q))) {
+        if (id.contains(q) || (tags && tags.contains(q))) {
             hits += 1;
 
             for (var i = 0; i < COLORS.length; i += 1) {
                 var color = COLORS[i];
                 var path = "";
 
-                html += '<img src="' + path + color + name + '.gif">';
+                html += '<img src="' + path + color + id + '.gif">';
             }
-            html += name + "<br>";
+            html += info.longname + "<br>";
         }
     }
     document.getElementById("s").innerHTML = html;

@@ -1,9 +1,9 @@
 {
  "1bishop": {"credit": "David Howe", "set": "Alfaerie Expansion Set 3", "tags": ["diminished"], "longname": "1-Bishop"},
  "1bishop2": {"credit": "David Howe", "set": "Alfaerie Expansion Set 2", "tags": ["diminished"], "longname": "1-Bishop II"},
- "1dgold": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1D Gold"},
- "1dknight": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1D Knight"},
- "1dsilver": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1D Silver"},
+ "1dgold": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1-Dimensional Gold"},
+ "1dknight": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1-Dimensional Knight"},
+ "1dsilver": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "1-Dimensional Silver"},
  "1rook": {"credit": "David Howe", "set": "Alfaerie Expansion Set 3", "tags": ["diminished"], "longname": "1-Rook"},
  "1rook2": {"credit": "David Howe", "set": "Alfaerie Expansion Set 2", "longname": "1-Rook II"},
  "2moveferz": {"credit": "ChessVariants", "set": "Alfaerie Misc: good", "longname": "2-Move Ferz"},
