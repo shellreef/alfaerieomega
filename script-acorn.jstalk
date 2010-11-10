@@ -7,7 +7,7 @@
 // Based on example from Flying Meat Support
 
 function main(input) {
-   var doc    = Acorn.open(input);
+   var doc    = Acorn.open(input[0]);
    var layer  = doc.layers().objectAtIndex(0);
    var img    = layer.CIImage();
 
@@ -32,6 +32,6 @@ if ("com.flyingmeat.Acorn" != [[NSBundle mainBundle] bundleIdentifier]) {
    var scriptContents = [NSString stringWithContentsOfFile:scriptPath encoding:NSUTF8StringEncoding error:null];
    var arg            = "/tmp/bking.gif";
 
-   [[JSTalk application:"Acorn"] doJavaScript:scriptContents withInput:arg];
+   [[JSTalk application:"Acorn"] doJavaScript:scriptContents withInput:[arg]];
 }
 
