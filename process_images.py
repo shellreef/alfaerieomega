@@ -79,7 +79,7 @@ def makeVariant(bImage, name, newColorHex, rotation, prefix, suffix):
     pixels in the blue piece image."""
 
     if rotation is None:
-        folder = "generated-colors/"
+        folder = ""
     else:
         # Less useful, so stash away
         folder = "generated-rotations/" 

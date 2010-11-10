@@ -51,9 +51,6 @@ function update()
             for (var i = 0; i < COLORS.length; i += 1) {
                 var color = COLORS[i];
                 var path = "";
-                if (color != "w" && color != "b") {
-                    path = "generated-colors/";
-                }
 
                 html += '<img src="' + path + color + name + '.gif">';
             }
