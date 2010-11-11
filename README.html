@@ -35,6 +35,20 @@ piece. In some cases, g, r, or k prefixes are seen for green, red, or black. How
 used for the black pieces in chess. Only transparent gif images are included here, not Windows bitmaps.
 
 <h2>Change Log</h2>
+<p>v1.5 (2010/11/10; 756 pieces) has a bunch of improvements, notably:
+<ul> 
+<li>incorporated Alfaerie Expansion Sets <a href="sets/alfaerie5a.html">5</a> and <a href="sets/alfaerie6.html">6</a>
+<li>added a handful of pieces with missing colors (smallcircle, forfnibakking, furlrurlbakking, wwall, ewall)
+<li>a new JSON <a href="index.json">piece index file</a> with metadata about each piece (issue <a href="https://github.com/shellreef/alfaerieomega/issues/closed#issue/6">#6</a>)
+<li>generated rotated versions (45&deg;, 90&deg;, 135&deg; clockwise/counterclockwise, and inverted) of every piece in an optional package (issue <a href="https://github.com/shellreef/alfaerieomega/issues/closed#issue/3">#3</a>)
+<li>generated yellow, red, green, cyan, orange, pink, and grey versions of every piece (issue <a href="https://github.com/shellreef/alfaerieomega/issues/closed#issue/1">#1</a>)
+<li>Python script <a href="process_images.py">process_images.py</a> for generating 
+<a href="list.txt">list.txt</a>/<a href="master.html">master.html</a> (supersedes the Perl script),
+    updating <a href="index.json">index.json</a>, and generating colored/rotated variants
+
+<li>an experimental Ajax-based <a href="browse.html">piece browser</a> for searching pieces by name or tag
+</ul>
+
 <p>v1.2 (2010/11/04; 699 pieces) adds 20 new and exclusive piece images ("<a href="sets/alfaeriebeta.html">Alfaerie Beta</a>"), 
     and is the first public release, <a href="https://github.com/shellreef/alfaerieomega">now available on GitHub</a>.
 
