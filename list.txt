@@ -297,7 +297,6 @@ fort
 fortress
 forwardchancellorprince
 forwardmirror3wazir
-forwardrookbackwardsprince
 fourfer
 fourleaper
 fqueenbknight
@@ -307,6 +306,7 @@ friendlyorphan
 frog
 frookbbishop
 frookbknight
+frookbprince
 furlrurlbakking
 ganycardinal
 ganycardinal2
