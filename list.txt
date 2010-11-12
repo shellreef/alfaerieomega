@@ -286,6 +286,7 @@ fiveriderpawn
 fkingbknight
 fknightbbishop
 fknightbking
+fknightbprince
 fknightbqueen
 fknightbrook
 flexibleknight
@@ -295,7 +296,6 @@ forfnibakking
 fort
 fortress
 forwardchancellorprince
-forwardknightbackwardsprince
 forwardmirror3wazir
 forwardrookbackwardsprince
 fourfer
