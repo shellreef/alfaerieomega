@@ -276,7 +276,9 @@ def updatePieceIndex():
 
         if not index.has_key(name):
             print "New piece:", name
-            #index[name] = {"set": ["Alfaerie Expansion Set 6"]}   #findImageSet("w"+name+".gif")}
+            print "** Please define credits in process_images.py then rerun"
+            raise SystemExit
+            #index[name] = {"set": "Alfaerie Beta", "credit": "Jeff Connelly"}   #findImageSet("w"+name+".gif")}
         # Otherwise, leave existing entry (preserve metadata)
 
     # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
