@@ -45,6 +45,8 @@ OTHER_ROTATIONS = {
         "90cw": 360 - 90,
         "135cw": 360 - 135,
         }
+# Disable rotated image generation. Remove to re-enable.
+OTHER_ROTATIONS = {}
 
 def main():
     index = updatePieceIndex()
