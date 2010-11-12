@@ -290,7 +290,14 @@ def updatePieceIndex():
 
     for i, name in enumerate(sorted(index.keys())):
         info = index[name]
-        out.write(' "%s": %s' % (name, json.dumps(info)))
+        out.write(" %s: {" % (json.dumps(name),))
+
+        for j, key in enumerate(sorted(info.keys())):
+            value = info[key]
+            out.write("%s: %s" % (json.dumps(key), json.dumps(value)))
+            if j != len(info.keys()) - 1:
+                out.write(", ");
+        out.write("}")
 
         # JSON spec (and IE, but no one cares about them) require omitting
         # comma for last item in list
@@ -298,6 +305,7 @@ def updatePieceIndex():
             out.write(",")
 
         out.write("\n")
+
     out.write("}\n")
 
     print "Loaded %s pieces" % (len(index.keys()),)
