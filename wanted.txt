@@ -1,5 +1,6 @@
 Chess Piece Image Wishlist
 
+** Have movement, only need images
 berolinapluspawn
 lancer
 antelope
@@ -44,4 +45,62 @@ octopus
 alibabarider
 forfnifurlrurking
 
+** modern transportation vehicles, based on http://unicode.org/charts/PDF/U1F680.pdf
+helicopter
+steamlocomotive
+railwaycar
+train
+metro
+light_rail
+station
+tram
+tram_car
+bus
+trolleybus
+minibus
+ambulance
+fireengine
+policecar
+taxi
+automobile
+recreationalvehicle
+deliverytruck
+lorry
+tractor
+monorail
+aerialtramway
+rowboat
+speedboat
 
+** animal symbols http://unicode.org/charts/PDF/U1F300.pdf
+rat
+mouse
+waterbuffalo
+cow
+leopard
+rabbit
+cat
+whale
+goat
+sheep
+rooster
+chicken
+dog
+pig
+boar
+bug
+ant
+honeybee
+ladybug
+fish
+tropicalfish
+blowfish
+turtle
+penguin
+koala
+poodle
+dromedarycamel
+bactriancamel
+dolphin
+hamster
+bear
