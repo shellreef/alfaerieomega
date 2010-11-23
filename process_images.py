@@ -32,7 +32,7 @@ OTHER_COLORS = {
         "o": "#ff8000",     # orange
         "p": "#ff00ff",     # pink
         "e": "#cccccc",     # grey
-        "k": "#000000",     # black (true)
+        #"k": "#000000",     # black - disabled because doesn't work well, black body conflicts with black outline
         }
 
 OTHER_ROTATIONS = {
