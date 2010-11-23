@@ -1,16 +1,15 @@
 Chess Piece Image Wishlist
 
 ** Have movement, only need images
-berolinapluspawn
-lancer
+berolinapluspawn - berolinapawn + pawn
 antelope
 commuter
 flamingo
 bison (camel+antelope)
-rootfiftyleaper
+rootfiftyleaper - sqrt(50) leaper
 buffalo
 wazaba
-diamond
+diamond - simple geometric shape?
 ferfil
 pterodactyl
 ferzwazirhunter
@@ -21,21 +20,18 @@ drunkenmarine
 gorilla
 diabolo
 yen
-invertedsilver
 drunkendeserter
-crane
 drunkengorilla
-r5
+r5 - like r4
 r6
 banshee
 berse
 dragonking
 duck
 camelopard
-fibnifrook
+fibnifrook - narrowknight + rook
 witch
-crownedrook
-hornedfalcon
+crownedrook - like crowned camel
 reversechariot
 murray_lion
 khohn
@@ -44,32 +40,6 @@ octopus
 alibabarider
 forfnifurlrurking
 
-** modern transportation vehicles, based on http://unicode.org/charts/PDF/U1F680.pdf
-helicopter
-steamlocomotive
-railwaycar
-train
-metro
-light_rail
-station
-tram
-tram_car
-bus
-trolleybus
-minibus
-ambulance
-fireengine
-policecar
-taxi
-automobile
-recreationalvehicle
-deliverytruck
-lorry
-tractor
-monorail
-aerialtramway
-rowboat
-speedboat
 
 ** animal symbols http://unicode.org/charts/PDF/U1F300.pdf
 rat
@@ -103,3 +73,31 @@ bactriancamel
 dolphin
 hamster
 bear
+
+** modern transportation vehicles, based on http://unicode.org/charts/PDF/U1F680.pdf
+helicopter
+steamlocomotive
+railwaycar
+train
+metro
+lightrail
+station
+tram
+tramcar
+bus
+trolleybus
+minibus
+ambulance
+fireengine
+policecar
+taxi
+automobile
+recreationalvehicle
+deliverytruck
+lorry
+tractor
+monorail
+aerialtramway
+rowboat
+speedboat
+
