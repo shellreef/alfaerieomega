@@ -374,7 +374,6 @@ hero
 hero2
 herowarmachinewazir
 hexagon
-highpriest_ess
 highpriestess
 highpriestess2
 highpriestess2ferz

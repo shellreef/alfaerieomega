@@ -375,7 +375,6 @@
  "hero2": {"credit": "Michael Howe", "longname": "Hero II", "set": "Alfaerie Expansion Set 5"},
  "herowarmachinewazir": {"credit": "ChessVariants", "longname": "Hero-Warmachine-Wazir", "set": "Alfaerie Misc: good", "tags": ["compound"]},
  "hexagon": {"credit": "ChessVariants", "longname": "Hexagon", "set": "Alfaerie Misc: good"},
- "highpriest_ess": {"credit": "Christine Bagley-Jones", "longname": "High Priest_ess", "set": "Alfaerie Expansion Set 4", "tags": ["animal"]},
  "highpriestess": {"credit": "Joe Joyce and Peter Joyce", "longname": "High Priestess", "set": "Alfaerie Expansion Set 4", "tags": ["animal"]},
  "highpriestess2": {"credit": "Joe Joyce", "longname": "High Priestess II", "set": "Alfaerie Expansion Set 5", "tags": ["animal"]},
  "highpriestess2ferz": {"credit": "ChessVariants", "longname": "High Priestess II-Ferz", "set": "Alfaerie Misc: bagleyjones", "tags": ["animal", "compound"]},
