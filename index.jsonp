@@ -301,6 +301,7 @@ var INDEX = {
  "fknightbprince": {"credit": "David Howe", "longname": "Forward Knight/Backwards Prince", "set": "Alfaerie"},
  "fknightbqueen": {"credit": "David Howe", "longname": "Forward Knight/Backards Qqueen", "set": "Alfaerie"},
  "fknightbrook": {"credit": "David Howe", "longname": "Forward Knight/Backwards Rook", "set": "Alfaerie"},
+ "flamingo": {"credit": "Christa Connelly", "longname": "Flamingo", "set": "Alfaerie Beta"},
  "flexibleknight": {"credit": "Joe Joyce and Peter Joyce", "longname": "Flexible Knight", "set": "Alfaerie Expansion Set 4"},
  "flyingkingfisher": {"credit": "David Howe", "longname": "Flying Kingfisher", "set": "Alfaerie Expansion Set 1", "tags": ["avian"]},
  "fool": {"credit": "David Howe", "longname": "Fool", "set": "Alfaerie"},

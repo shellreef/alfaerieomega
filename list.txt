@@ -300,6 +300,7 @@ fknightbking
 fknightbprince
 fknightbqueen
 fknightbrook
+flamingo
 flexibleknight
 flyingkingfisher
 fool
