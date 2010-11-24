@@ -1,7 +1,6 @@
 Chess Piece Image Wishlist
 
 ** Have movement, only need images
-berolinapluspawn - berolinapawn + pawn
 antelope
 commuter
 flamingo
@@ -9,7 +8,6 @@ bison (camel+antelope)
 rootfiftyleaper - sqrt(50) leaper
 buffalo
 wazaba
-diamond - simple geometric shape?
 ferfil
 pterodactyl
 ferzwazirhunter
@@ -22,8 +20,6 @@ diabolo
 yen
 drunkendeserter
 drunkengorilla
-r5 - like r4
-r6
 banshee
 berse
 dragonking

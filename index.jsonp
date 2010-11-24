@@ -586,6 +586,8 @@ var INDEX = {
  "r3": {"credit": "ChessVariants", "longname": "R3", "set": "Alfaerie Misc: good"},
  "r4": {"credit": "ChessVariants", "longname": "R4", "set": "Alfaerie Misc: good"},
  "r4ferz": {"credit": "ChessVariants", "longname": "R4-Ferz", "set": "Alfaerie Misc: good", "tags": ["compound"]},
+ "r5": {"credit": "Jeff Connelly", "longname": "R5", "set": "Alfaerie Beta"},
+ "r6": {"credit": "Jeff Connelly", "longname": "r6", "set": "Alfaerie Beta"},
  "ram": {"credit": "David Howe", "longname": "Ram", "set": "Alfaerie", "tags": ["animal"]},
  "reaper": {"credit": "ChessVariants", "longname": "Reaper", "set": "Alfaerie Misc: good"},
  "recliningdragon": {"credit": "Christine Bagley-Jones", "longname": "Reclining Dragon", "set": "Alfaerie Expansion Set 5", "tags": ["japanese"]},

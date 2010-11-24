@@ -282,11 +282,11 @@ def updatePieceIndex():
             continue
 
         if not index.has_key(name):
-            print "New piece:", name
+            print "\n** New piece:", name
             index[name] = {}
-            index[name]["set"] = raw_input("Set name?")   # Alfaerie Beta, etc.
-            index[name]["credit"] = raw_input("Credit?")  
-            index[name]["longname"] = raw_input("Long name?")
+            index[name]["set"] = raw_input("Set name? ")   # Alfaerie Beta, etc.
+            index[name]["credit"] = raw_input("Credit? ")  
+            index[name]["longname"] = raw_input("Long name? ")
             #print "** Please define credits in process_images.py then rerun"
             #raise SystemExit
             #index[name] = {"set": "Alfaerie Beta", "credit": "Jeff Connelly"}   #findImageSet("w"+name+".gif")}

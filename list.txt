@@ -585,6 +585,8 @@ quickpawn
 r3
 r4
 r4ferz
+r5
+r6
 ram
 reaper
 recliningdragon
