@@ -162,11 +162,11 @@ def indexForColor(image, rgb):
     indexToRGB = colorPalette(image)
    
     # This syntax (dict comprehension) requires Python 2.7+ 
-    rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
-    # TODO: Python 2.6 compatible
-    #rgbToIndex = {}
-    #for k,v in enumerate(indexToRGB):
-    #    rgbToIndex[v] = k
+    #rgbToIndex = {v:k for k, v in enumerate(indexToRGB)}
+    # Python 2.6 compatible
+    rgbToIndex = {}
+    for k,v in enumerate(indexToRGB):
+        rgbToIndex[v] = k
 
     index = rgbToIndex.get(rgb)
 
