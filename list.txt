@@ -212,6 +212,7 @@ digit9
 diplomat
 diplomat2
 direknight
+dog
 doubleactualizeddabbaba
 doubleactualizedpotentialbishop
 doubleactualizedpotentialelephant

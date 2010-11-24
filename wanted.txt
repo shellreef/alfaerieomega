@@ -50,7 +50,6 @@ goat
 sheep
 rooster
 chicken
-dog
 pig
 boar
 bug
