@@ -341,20 +341,18 @@ def writeIndexDocuments(index):
 </head>
 <body>
 <table>
-""")
+<p>Total pieces: %s
+""" % (len(index.keys()),))
 
-    i = 1
     for name in sorted(index.keys()):
         #info = index[name]
 
         text.write(name + "\n")
-        html.write("<tr><td>%s</td>" % (i,))
+        html.write("<tr>")
         for color in "wb":
             html.write("""<td><img src="%s%s.gif"></td>""" % (color, name))
         html.write("<td>%s</td>" % (name,))
         html.write("</tr>\n")
-
-        i += 1
 
     html.write("""</table>
 </body>
