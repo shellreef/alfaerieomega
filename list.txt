@@ -71,6 +71,7 @@ barcrider
 bat
 battlement
 berolinapawn
+berolinapluspawn
 betzancrab
 bigbertha
 bigknightking

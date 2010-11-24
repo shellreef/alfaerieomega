@@ -46,7 +46,7 @@ OTHER_ROTATIONS = {
         "135cw": 360 - 135,
         }
 # Disable rotated image generation. Remove to re-enable.
-OTHER_ROTATIONS = {}
+OTHER_ROTATIONS = {"": None}
 
 def main():
     index = updatePieceIndex()
@@ -283,8 +283,12 @@ def updatePieceIndex():
 
         if not index.has_key(name):
             print "New piece:", name
-            print "** Please define credits in process_images.py then rerun"
-            raise SystemExit
+            index[name] = {}
+            index[name]["set"] = raw_input("Set name?")   # Alfaerie Beta, etc.
+            index[name]["credit"] = raw_input("Credit?")  
+            index[name]["longname"] = raw_input("Long name?")
+            #print "** Please define credits in process_images.py then rerun"
+            #raise SystemExit
             #index[name] = {"set": "Alfaerie Beta", "credit": "Jeff Connelly"}   #findImageSet("w"+name+".gif")}
         # Otherwise, leave existing entry (preserve metadata)
 
@@ -316,6 +320,10 @@ def updatePieceIndex():
         out.write("\n")
 
     out.write("}\n")
+    out.close()
+
+    # Save JSONP for easy <script src> reference
+    file(INDEX_FILE + "p", "w").write("var INDEX = %s;" % (file(INDEX_FILE).read(),))
 
     print "Loaded %s pieces" % (len(index.keys()),)
 

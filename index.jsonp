@@ -72,6 +72,7 @@ var INDEX = {
  "bat": {"credit": "David Howe", "longname": "Bat", "set": "Alfaerie Expansion Set 3", "tags": ["animal"]},
  "battlement": {"credit": "Michael Howe", "longname": "Battlement", "set": "Alfaerie Expansion Set 5"},
  "berolinapawn": {"credit": "David Howe", "longname": "Berolina Pawn", "set": "Alfaerie"},
+ "berolinapluspawn": {"credit": "Jeff Connelly", "longname": "Berolina Plus Pawn", "set": "Alfaerie Beta"},
  "betzancrab": {"credit": "ChessVariants", "longname": "Betzan crab", "set": "Alfaerie Misc: good"},
  "bigbertha": {"credit": "ChessVariants", "longname": "Big Bertha", "set": "Alfaerie Misc: good"},
  "bigknightking": {"credit": "ChessVariants", "longname": "Big Knight-King", "set": "Alfaerie Misc: good", "tags": ["compound"]},
@@ -765,3 +766,4 @@ var INDEX = {
  "zigzaggeneral": {"credit": "Joe Joyce and Peter Joyce", "longname": "Zigzag General", "set": "Alfaerie Expansion Set 4"},
  "zigzaggeneral2": {"credit": "Christine Bagley-Jones", "longname": "Zigzag General II", "set": "Alfaerie Expansion Set 4"}
 }
+;
