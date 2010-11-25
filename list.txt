@@ -65,6 +65,7 @@ backwardssilvergeneral
 ballista_north
 ballista_south
 banner
+banshee
 barc
 barc2
 barcrider

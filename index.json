@@ -66,6 +66,7 @@
  "ballista_north": {"credit": "Matthew La Vallee", "longname": "Ballista North", "set": "Alfaerie Expansion Set 6"},
  "ballista_south": {"credit": "Matthew La Vallee", "longname": "Ballista South", "set": "Alfaerie Expansion Set 6"},
  "banner": {"credit": "David Howe", "longname": "Banner", "set": "Alfaerie"},
+ "banshee": {"credit": "Jeff Connelly", "longname": "Banshee", "set": "Alfaerie Beta"},
  "barc": {"credit": "ChessVariants", "longname": "Barc", "set": "Alfaerie Misc: good", "tags": ["diminished"]},
  "barc2": {"credit": "ChessVariants", "longname": "Barc II", "set": "Alfaerie Misc: good"},
  "barcrider": {"credit": "ChessVariants", "longname": "Barcrider", "set": "Alfaerie Misc: good"},
