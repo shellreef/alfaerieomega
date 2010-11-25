@@ -92,6 +92,7 @@ bishopwarmachine
 bishopwarmachinerider
 blindmonkey
 blindtiger
+blindtiger2
 block
 blowfish
 blueking

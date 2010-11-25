@@ -93,6 +93,7 @@ var INDEX = {
  "bishopwarmachinerider": {"credit": "Christine Bagley-Jones", "longname": "Bishop-Warmachinerider", "set": "Alfaerie Expansion Set 4", "tags": ["compound"]},
  "blindmonkey": {"credit": "Christine Bagley-Jones", "longname": "Blind Monkey", "set": "Alfaerie Expansion Set 5", "tags": ["japanese"]},
  "blindtiger": {"credit": "Christine Bagley-Jones", "longname": "Blind Tiger", "set": "Alfaerie Expansion Set 5", "tags": ["japanese"]},
+ "blindtiger2": {"credit": "Jeff Connelly", "longname": "Blind Tiger II", "set": "Alfaerie Beta"},
  "block": {"credit": "David Howe", "longname": "Block", "set": "Alfaerie"},
  "blowfish": {"credit": "Christa Connelly", "longname": "Blowfish", "set": "Alfaerie Beta"},
  "blueking": {"credit": "ChessVariants", "longname": "Blue King", "set": "Alfaerie Misc: color"},
