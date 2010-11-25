@@ -578,6 +578,7 @@ var INDEX = {
  "pinkpawn": {"credit": "ChessVariants", "longname": "Pink Pawn", "set": "Alfaerie Misc: color"},
  "pkpawn": {"credit": "Jeff Connelly", "longname": "Pizza Kings Pawn", "set": "Alfaerie Beta"},
  "plane": {"credit": "David Howe", "longname": "Plane", "set": "Alfaerie"},
+ "plasticgeneral": {"credit": "Jeff Connelly", "longname": "Plastic General", "set": "Alfaerie Beta"},
  "prince": {"credit": "David Howe", "longname": "Prince", "set": "Alfaerie"},
  "princess": {"credit": "David Howe", "longname": "Princess", "set": "Alfaerie", "tags": ["female"]},
  "promotedbishop": {"credit": "David Howe", "longname": "Promoted Bishop", "set": "Alfaerie"},

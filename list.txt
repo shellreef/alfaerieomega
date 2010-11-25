@@ -577,6 +577,7 @@ pinkknight
 pinkpawn
 pkpawn
 plane
+plasticgeneral
 prince
 princess
 promotedbishop
