@@ -761,6 +761,7 @@ var INDEX = {
  "windmill": {"credit": "David Howe", "longname": "Windmill", "set": "Alfaerie"},
  "wingedamazon": {"credit": "ChessVariants", "longname": "Winged Amazon", "set": "Alfaerie Misc: aronson", "tags": ["avian"]},
  "wingedcardinal": {"credit": "ChessVariants", "longname": "Winged Cardinal", "set": "Alfaerie Misc: aronson", "tags": ["avian"]},
+ "witch": {"credit": "Christa Connelly", "longname": "Witch", "set": "Alfaerie Beta"},
  "withdrawer": {"credit": "David Howe", "longname": "Withdrawer", "set": "Alfaerie"},
  "wizzen": {"credit": "ChessVariants", "longname": "Wizzen", "set": "Alfaerie Misc: good"},
  "wuss": {"credit": "ChessVariants", "longname": "Wuss", "set": "Alfaerie Misc: good"},

@@ -22,7 +22,6 @@ banshee
 berse
 camelopard
 fibnifrook - narrowknight + rook
-witch
 reversechariot
 murray_lion
 khohn
