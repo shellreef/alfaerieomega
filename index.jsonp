@@ -665,6 +665,7 @@ var INDEX = {
  "shipinv": {"credit": "Jeff Connelly", "longname": "Ship inv", "set": "Alfaerie Beta", "tags": ["rotated"]},
  "shogiknight": {"credit": "ChessVariants", "longname": "Shogi Knight", "set": "Alfaerie Misc: good"},
  "shogipawn": {"credit": "ChessVariants", "longname": "Shogi Pawn", "set": "Alfaerie Misc: chushogi"},
+ "sidewinder": {"credit": "Jeff Connelly", "longname": "Sidewinder", "set": "Alfaerie Beta"},
  "siegeengine": {"credit": "ChessVariants", "longname": "Siegengine", "set": "Alfaerie Misc: wheeler"},
  "siegeenginerider": {"credit": "ChessVariants", "longname": "Siegeenginerider", "set": "Alfaerie Misc: wheeler"},
  "silvergeneral": {"credit": "David Howe", "longname": "Silver General", "set": "Alfaerie", "tags": ["japanese"]},
