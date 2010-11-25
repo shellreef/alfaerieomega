@@ -721,6 +721,7 @@
  "triangulator": {"credit": "ChessVariants", "longname": "Triangulator", "set": "Alfaerie Misc: good"},
  "triangulatorbishop": {"credit": "ChessVariants", "longname": "Triangulator-Bishop", "set": "Alfaerie Misc: good", "tags": ["compound"]},
  "tripleactualizedpotentialguard": {"credit": "ChessVariants", "longname": "Triple Actualized Potential Guard", "set": "Alfaerie Misc: good"},
+ "turtle": {"credit": "Jeff Connelly", "longname": "Turtle", "set": "Alfaerie Beta"},
  "twistedknight": {"credit": "Christine Bagley-Jones", "longname": "Twisted Knight", "set": "Alfaerie Expansion Set 4"},
  "twodiamondbishop": {"credit": "ChessVariants", "longname": "Two-diamond Bishop", "set": "Alfaerie Misc: good"},
  "twodiamondqueen": {"credit": "ChessVariants", "longname": "Two-diamond Queen", "set": "Alfaerie Misc: good"},

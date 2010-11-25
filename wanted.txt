@@ -38,8 +38,6 @@ forfnifurlrurking
 
 
 ** animal symbols http://unicode.org/charts/PDF/U1F300.pdf
-rat
-mouse
 waterbuffalo
 cow
 leopard
@@ -57,7 +55,6 @@ ant
 honeybee
 ladybug
 tropicalfish
-turtle
 penguin
 koala
 poodle
