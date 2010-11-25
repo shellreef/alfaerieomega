@@ -297,6 +297,7 @@
  "ferzx4nw": {"credit": "ChessVariants", "longname": "Ferz x4nw", "set": "Alfaerie Misc: giantchess"},
  "ferzx4se": {"credit": "ChessVariants", "longname": "Ferz x4se", "set": "Alfaerie Misc: giantchess"},
  "ferzx4sw": {"credit": "ChessVariants", "longname": "Ferz x4sw", "set": "Alfaerie Misc: giantchess"},
+ "fieldmouse": {"credit": "Jeff Connelly", "longname": "Field Mouse", "set": "Alfaerie Beta"},
  "fish": {"credit": "Jeff Connelly", "longname": "Fish", "set": "Alfaerie Beta"},
  "fiveriderpawn": {"credit": "Jeff Connelly", "longname": "Fiverider Pawn", "set": "Alfaerie Beta"},
  "fkingbknight": {"credit": "David Howe", "longname": "Forward King/Backwards Knight", "set": "Alfaerie"},

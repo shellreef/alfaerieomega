@@ -296,6 +296,7 @@ ferzx4ne
 ferzx4nw
 ferzx4se
 ferzx4sw
+fieldmouse
 fish
 fiveriderpawn
 fkingbknight
