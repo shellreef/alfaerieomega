@@ -92,6 +92,7 @@ var INDEX = {
  "bishoppawn": {"credit": "David Howe", "longname": "Bishop-Pawn", "set": "Alfaerie", "tags": ["compound"]},
  "bishopwarmachine": {"credit": "David Howe", "longname": "Bishop-Warmachine", "set": "Alfaerie", "tags": ["compound"]},
  "bishopwarmachinerider": {"credit": "Christine Bagley-Jones", "longname": "Bishop-Warmachinerider", "set": "Alfaerie Expansion Set 4", "tags": ["compound"]},
+ "bison": {"credit": "Jeff Connelly", "longname": "Bison", "set": "Alfaerie Beta"},
  "blindmonkey": {"credit": "Christine Bagley-Jones", "longname": "Blind Monkey", "set": "Alfaerie Expansion Set 5", "tags": ["japanese"]},
  "blindtiger": {"credit": "Christine Bagley-Jones", "longname": "Blind Tiger", "set": "Alfaerie Expansion Set 5", "tags": ["japanese"]},
  "blindtiger2": {"credit": "Jeff Connelly", "longname": "Blind Tiger II", "set": "Alfaerie Beta"},

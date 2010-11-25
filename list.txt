@@ -91,6 +91,7 @@ bishopknight2
 bishoppawn
 bishopwarmachine
 bishopwarmachinerider
+bison
 blindmonkey
 blindtiger
 blindtiger2
