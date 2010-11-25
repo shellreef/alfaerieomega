@@ -647,6 +647,7 @@ rookknight2
 rookpawn
 rooktriangulator
 rooktriangulatorbishop
+rootfiftyleaper
 rose
 rosebishop
 roserook

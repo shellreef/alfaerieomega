@@ -4,14 +4,12 @@ Chess Piece Image Wishlist
 antelope
 commuter
 bison (camel+antelope)
-rootfiftyleaper - sqrt(50) leaper
 buffalo
 wazaba
 ferfil
 pterodactyl
 ferzwazirhunter
 wazirferzhunter
-drunkenbackslider
 drunkenmarine
 gorilla
 diabolo

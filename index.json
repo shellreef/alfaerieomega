@@ -648,6 +648,7 @@
  "rookpawn": {"credit": "David Howe", "longname": "Rook-Pawn", "set": "Alfaerie", "tags": ["compound"]},
  "rooktriangulator": {"credit": "ChessVariants", "longname": "Rook-Triangulator", "set": "Alfaerie Misc: good", "tags": ["compound"]},
  "rooktriangulatorbishop": {"credit": "ChessVariants", "longname": "Rook-Triangulator-Bishop", "set": "Alfaerie Misc: good", "tags": ["compound"]},
+ "rootfiftyleaper": {"credit": "Jeff Connelly", "longname": "Root-Fifty Leaper", "set": "Alfaerie Beta"},
  "rose": {"credit": "ChessVariants", "longname": "Rose", "set": "Alfaerie Misc: sibahi"},
  "rosebishop": {"credit": "ChessVariants", "longname": "Rose-Bishop", "set": "Alfaerie Misc: sibahi", "tags": ["compound"]},
  "roserook": {"credit": "ChessVariants", "longname": "Rose-Rook", "set": "Alfaerie Misc: sibahi", "tags": ["compound"]},
