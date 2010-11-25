@@ -499,6 +499,7 @@ moon
 moonrider
 moosepawn
 mortar
+mouse
 multipathcamelknight
 multipathgiraffeknight
 multipathzebraknight
@@ -593,6 +594,7 @@ r4ferz
 r5
 r6
 ram
+rat
 reaper
 recliningdragon
 redpawn
