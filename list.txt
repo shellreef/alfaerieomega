@@ -93,6 +93,7 @@ bishopwarmachinerider
 blindmonkey
 blindtiger
 block
+blowfish
 blueking
 bluepawn
 bottomheart
@@ -294,6 +295,7 @@ ferzx4ne
 ferzx4nw
 ferzx4se
 ferzx4sw
+fish
 fiveriderpawn
 fkingbknight
 fknightbbishop

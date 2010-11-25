@@ -284,7 +284,7 @@ def updatePieceIndex():
         if not index.has_key(name):
             print "\n** New piece:", name
             index[name] = {}
-            index[name]["set"] = raw_input("Set name? ")   # Alfaerie Beta, etc.
+            index[name]["set"] = "Alfaerie Beta" #raw_input("Set name? ")
             index[name]["credit"] = raw_input("Credit? ")  
             index[name]["longname"] = raw_input("Long name? ")
             #print "** Please define credits in process_images.py then rerun"
