@@ -188,6 +188,7 @@
  "crookedqueen": {"credit": "Jeff Connelly", "longname": "Crooked Queen", "set": "Alfaerie Beta"},
  "crookedrook": {"credit": "David Howe", "longname": "Crooked Rook", "set": "Alfaerie"},
  "crownedcamel": {"credit": "ChessVariants", "longname": "Crowned Camel", "set": "Alfaerie Misc: good", "tags": ["animal"]},
+ "crownedrook": {"credit": "Jeff Connelly", "longname": "Crowned Rook", "set": "Alfaerie Beta"},
  "crusader": {"credit": "Michael Howe", "longname": "Crusader", "set": "Alfaerie Expansion Set 3"},
  "cwbishop": {"credit": "ChessVariants", "longname": "Cwbishop", "set": "Alfaerie Misc: slidechess"},
  "cwknight": {"credit": "ChessVariants", "longname": "Cwknight", "set": "Alfaerie Misc: slidechess"},

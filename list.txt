@@ -187,6 +187,7 @@ crookedknightridershort
 crookedqueen
 crookedrook
 crownedcamel
+crownedrook
 crusader
 cwbishop
 cwknight
