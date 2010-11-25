@@ -20,7 +20,6 @@ drunkendeserter
 drunkengorilla
 banshee
 berse
-duck
 camelopard
 fibnifrook - narrowknight + rook
 witch
