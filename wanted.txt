@@ -3,8 +3,6 @@ Chess Piece Image Wishlist
 ** Have movement, only need images
 antelope
 commuter
-bison (camel+antelope)
-buffalo
 wazaba
 ferfil
 pterodactyl
@@ -14,9 +12,7 @@ drunkenmarine
 gorilla
 drunkendeserter
 drunkengorilla
-banshee
 berse
-camelopard
 fibnifrook - narrowknight + rook
 reversechariot
 murray_lion

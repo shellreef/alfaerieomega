@@ -151,6 +151,7 @@ var INDEX = {
  "cbqueen": {"credit": "ChessVariants", "longname": "Cbqueen", "set": "Alfaerie Misc: slidechess"},
  "cbrook": {"credit": "ChessVariants", "longname": "Cbrook", "set": "Alfaerie Misc: slidechess"},
  "ccpawn": {"credit": "Jeff Connelly", "longname": "Ccpawn", "set": "Alfaerie Beta"},
+ "centaur": {"credit": "Jeff Connelly", "longname": "Centaur", "set": "Alfaerie Beta"},
  "chameleon": {"credit": "David Howe", "longname": "Chameleon", "set": "Alfaerie"},
  "champion": {"credit": "David Howe", "longname": "Champion", "set": "Alfaerie"},
  "champion2": {"credit": "Matthew La Vallee", "longname": "Champion II", "set": "Alfaerie Expansion Set 6"},

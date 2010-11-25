@@ -150,6 +150,7 @@ cbpawn
 cbqueen
 cbrook
 ccpawn
+centaur
 chameleon
 champion
 champion2
