@@ -770,6 +770,7 @@
  "xqpp": {"credit": "ChessVariants", "longname": "XQPP", "set": "Alfaerie Misc: sibahi"},
  "yellowbishop": {"credit": "ChessVariants", "longname": "Yellow Bishop", "set": "Alfaerie Misc: color"},
  "yellowpawn": {"credit": "ChessVariants", "longname": "Yellow Pawn", "set": "Alfaerie Misc: color"},
+ "yen": {"credit": "Jeff Connelly", "longname": "Yen", "set": "Alfaerie Beta"},
  "zebra": {"credit": "David Howe", "longname": "Zebra", "set": "Alfaerie", "tags": ["animal"]},
  "zebracamel": {"credit": "ChessVariants", "longname": "Zebra-Camel", "set": "Alfaerie Misc: wheeler", "tags": ["animal", "compound"]},
  "zebracamelrider": {"credit": "ChessVariants", "longname": "Zebra-Camelrider", "set": "Alfaerie Misc: wheeler", "tags": ["animal", "compound"]},

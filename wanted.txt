@@ -15,7 +15,6 @@ drunkenbackslider
 drunkenmarine
 gorilla
 diabolo
-yen
 drunkendeserter
 drunkengorilla
 banshee
