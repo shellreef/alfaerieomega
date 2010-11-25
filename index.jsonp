@@ -217,6 +217,7 @@ var INDEX = {
  "diplomat2": {"credit": "Michael Howe", "longname": "Diplomat II", "set": "Alfaerie Expansion Set 5"},
  "direknight": {"credit": "Matthew La Vallee", "longname": "Direknight", "set": "Alfaerie Expansion Set 6"},
  "dog": {"credit": "Christa Connelly", "longname": "Dog", "set": "Alfaerie Beta"},
+ "dolphin": {"credit": "Christa Connelly", "longname": "Dolphin", "set": "Alfaerie Beta"},
  "doubleactualizeddabbaba": {"credit": "ChessVariants", "longname": "Doubleactualizeddabbaba", "set": "Alfaerie Misc: good"},
  "doubleactualizedpotentialbishop": {"credit": "ChessVariants", "longname": "Doubleactualizedpotentialbishop", "set": "Alfaerie Misc: good"},
  "doubleactualizedpotentialelephant": {"credit": "ChessVariants", "longname": "Doubleactualizedpotentialelephant", "set": "Alfaerie Misc: good", "tags": ["animal"]},

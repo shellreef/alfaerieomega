@@ -216,6 +216,7 @@ diplomat
 diplomat2
 direknight
 dog
+dolphin
 doubleactualizeddabbaba
 doubleactualizedpotentialbishop
 doubleactualizedpotentialelephant
