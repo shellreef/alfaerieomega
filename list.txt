@@ -235,6 +235,8 @@ dozer
 drafthorse2
 dragon
 dragon2
+drunkbackslider
+drunkbackslider2
 drunkelephant
 drunkelephant2
 ducaqueen

@@ -236,6 +236,8 @@
  "drafthorse2": {"credit": "Matthew La Vallee", "longname": "Drafthorse II", "set": "Alfaerie Expansion Set 6", "tags": ["animal"]},
  "dragon": {"credit": "David Howe", "longname": "Dragon", "set": "Alfaerie", "tags": ["animal"]},
  "dragon2": {"credit": "ChessVariants", "longname": "Dragon II", "set": "Alfaerie Misc: chushogi"},
+ "drunkbackslider": {"credit": "Jeff Connelly", "longname": "Drunken Backslider", "set": "Alfaerie Beta"},
+ "drunkbackslider2": {"credit": "Jeff Connelly", "longname": "Drunken Backslider II", "set": "Alfaerie Beta"},
  "drunkelephant": {"credit": "ChessVariants", "longname": "Drunk Elephant", "set": "Alfaerie Misc: chushogi", "tags": ["animal"]},
  "drunkelephant2": {"credit": "Christine Bagley-Jones", "longname": "Drunk Elephant II", "set": "Alfaerie Expansion Set 5", "tags": ["animal"]},
  "ducaqueen": {"credit": "ChessVariants", "longname": "Ducaqueen", "set": "Alfaerie Misc: good"},
