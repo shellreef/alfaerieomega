@@ -103,6 +103,7 @@ bottomheart
 brontosaurus
 brownpawn
 brownrook
+buffalo
 butterfly
 bw3
 cage
@@ -113,6 +114,7 @@ camel2wazir
 camelbishop
 camelbishoprider
 camelferz
+camelopard
 camelpawn
 camelqueen
 camelrev2
