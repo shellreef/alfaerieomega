@@ -98,6 +98,7 @@ var INDEX = {
  "blueking": {"credit": "ChessVariants", "longname": "Blue King", "set": "Alfaerie Misc: color"},
  "bluepawn": {"credit": "ChessVariants", "longname": "Blue Pawn", "set": "Alfaerie Misc: color"},
  "bottomheart": {"credit": "ChessVariants", "longname": "Bottom Heart", "set": "Alfaerie Misc: good"},
+ "brontosaurus": {"credit": "Jeff Connelly", "longname": "Brontosaurus", "set": "Alfaerie Beta"},
  "brownpawn": {"credit": "ChessVariants", "longname": "Brown Pawn", "set": "Alfaerie Misc: color"},
  "brownrook": {"credit": "ChessVariants", "longname": "Brown Rook", "set": "Alfaerie Misc: color"},
  "butterfly": {"credit": "David Howe", "longname": "Butterfly", "set": "Alfaerie Expansion Set 1", "tags": ["animal"]},

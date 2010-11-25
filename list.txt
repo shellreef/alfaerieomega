@@ -97,6 +97,7 @@ blowfish
 blueking
 bluepawn
 bottomheart
+brontosaurus
 brownpawn
 brownrook
 butterfly
