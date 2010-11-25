@@ -3,7 +3,6 @@ Chess Piece Image Wishlist
 ** Have movement, only need images
 antelope
 commuter
-flamingo
 bison (camel+antelope)
 rootfiftyleaper - sqrt(50) leaper
 buffalo
@@ -22,18 +21,15 @@ drunkendeserter
 drunkengorilla
 banshee
 berse
-dragonking
 duck
 camelopard
 fibnifrook - narrowknight + rook
 witch
-crownedrook - like crowned camel
 reversechariot
 murray_lion
 khohn
 kraken
 octopus
-alibabarider
 forfnifurlrurking
 
 
