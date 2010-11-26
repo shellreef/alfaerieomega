@@ -242,6 +242,7 @@ var INDEX = {
  "drafthorse2": {"credit": "Matthew La Vallee", "longname": "Drafthorse II", "set": "Alfaerie Expansion Set 6", "tags": ["animal"]},
  "dragon": {"credit": "David Howe", "longname": "Dragon", "set": "Alfaerie", "tags": ["animal"]},
  "dragon2": {"credit": "ChessVariants", "longname": "Dragon II", "set": "Alfaerie Misc: chushogi"},
+ "drunk": {"credit": "Jeff Connelly", "longname": "Drunk", "set": "Alfaerie Beta"},
  "drunkbackslider": {"credit": "Jeff Connelly", "longname": "Drunken Backslider", "set": "Alfaerie Beta"},
  "drunkbackslider2": {"credit": "Jeff Connelly", "longname": "Drunken Backslider II", "set": "Alfaerie Beta"},
  "drunkelephant": {"credit": "ChessVariants", "longname": "Drunk Elephant", "set": "Alfaerie Misc: chushogi", "tags": ["animal"]},
