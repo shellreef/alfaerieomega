@@ -348,11 +348,16 @@ def writeIndexDocuments(index):
         #info = index[name]
 
         text.write(name + "\n")
-        html.write("<tr>")
+#        html.write("<tr>")
+#        for color in "wb":
+#            html.write("""<td><img src="%s%s.gif"></td>""" % (color, name))
+#        html.write("<td>%s</td>" % (name,))
+#        html.write("</tr>\n")
+	html.write("""<div style="float: left; border: 1px solid black">""")
         for color in "wb":
-            html.write("""<td><img src="%s%s.gif"></td>""" % (color, name))
-        html.write("<td>%s</td>" % (name,))
-        html.write("</tr>\n")
+            html.write("""<img src="%s%s.gif">""" % (color, name))
+        html.write("""<p style="font-size: x-small">%s</p>""" % (name,))
+        html.write("</div>")
 
     html.write("""</table>
 </body>
