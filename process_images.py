@@ -338,6 +338,10 @@ def writeIndexDocuments(index):
 <html>
 <head>
 <title>Alfaerie Omega - Piece Index</title>
+<style>
+div { float: left; border: 1px dotted black; }
+p { text-align: center; }
+</style>
 </head>
 <body bgcolor="lightgray">
 <table>
@@ -345,17 +349,20 @@ def writeIndexDocuments(index):
 """ % (len(index.keys()),))
 
     for name in sorted(index.keys()):
-        #info = index[name]
+        info = index[name]
 
         text.write(name + "\n")
-	html.write("""<div style="float: left; border: 1px dotted black">""")
+	html.write("<div>")
         for color in "wb":
             html.write("""<img src="%s%s.gif" width="50" height="50">""" % (color, name))  # TODO: make consistently 50x50!
         if len(name) > 12:
-            shortname = name[0:4] + ".." + name[-7:-1]  # fit the name in :( TODO: make real names not so long!
+            shortname = name[0:4] + ".." + name[-7:-1] + name[-1]  # fit the name in :( TODO: make real names not so long!
         else:
             shortname = name
-        html.write("""<p title="%s" style="text-align: center">%s</p>""" % (name, shortname))
+        text_info = name + "\n"
+        for key in sorted(info.iterkeys()):
+            text_info += "%s: %s\n" % (key, info[key])
+        html.write("""<p title="%s">%s</p>""" % (text_info, shortname))
         html.write("</div>")
 
     html.write("""</table>
