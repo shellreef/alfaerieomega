@@ -339,7 +339,7 @@ def writeIndexDocuments(index):
 <head>
 <title>Alfaerie Omega - Piece Index</title>
 </head>
-<body>
+<body bgcolor="lightgray">
 <table>
 <p>Total pieces: %s
 """ % (len(index.keys()),))
