@@ -20,7 +20,14 @@ khohn
 kraken
 octopus
 forfnifurlrurking
-
+r7
+b5
+b6
+b7
+q4
+q5
+q6
+q7
 
 ** animal symbols http://unicode.org/charts/PDF/U1F300.pdf
 waterbuffalo
@@ -74,4 +81,13 @@ monorail
 aerialtramway
 rowboat
 speedboat
+
+** geometric shapes
+triangle
+square
+pentagon
+septagon
+octagon
+nonagon
+dodecagon
 
