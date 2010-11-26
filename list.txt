@@ -246,6 +246,7 @@ drunkbackslider
 drunkbackslider2
 drunkelephant
 drunkelephant2
+drunkenmarine
 ducaqueen
 ducaterror
 duchess
@@ -496,6 +497,7 @@ makrukpawn
 man
 mann2
 mao
+marine
 marshal2
 mastodon
 meatball
