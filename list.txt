@@ -704,6 +704,7 @@ snake4sw
 spaciousferz
 spaciouswazir
 spider
+square
 square45
 squire
 squirrel

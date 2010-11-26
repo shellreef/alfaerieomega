@@ -84,7 +84,6 @@ speedboat
 
 ** geometric shapes
 triangle
-square
 pentagon
 septagon
 octagon
