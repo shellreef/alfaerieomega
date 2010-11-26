@@ -356,7 +356,11 @@ def writeIndexDocuments(index):
 	html.write("""<div style="float: left; border: 1px solid black">""")
         for color in "wb":
             html.write("""<img src="%s%s.gif">""" % (color, name))
-        html.write("""<p style="font-size: x-small">%s</p>""" % (name,))
+        if len(name) > 14:
+            shortname = name[0:4] + ".." + name[-9:-1]  # fit the name in :(
+        else:
+            shortname = name
+        html.write("""<p title="%s">%s</p>""" % (name, shortname))
         html.write("</div>")
 
     html.write("""</table>
