@@ -37,6 +37,10 @@ function update()
     var hits = 0;
     var html = "";
 
+    if (full) {
+        html = "<table>";    // TODO: sort-to-click table headings
+    }
+
     for (var id in INDEX) {
         var info = INDEX[id];
         var tags = info.tags;
@@ -45,11 +49,19 @@ function update()
             hits += 1;
 
             if (full) {
+                html += "<tr>"
+                html += "<td>" + id + "</td>";
+                html += "<td>";
                 // Full view, display all colors
                 for (var i = 0; i < COLORS.length; i += 1) {
                     html += '<img src="' + COLORS[i] + id + '.gif">';
                 }
-	        html += info.longname + "<br>";
+                html += "</td>";
+                html += "<td>" + info.longname + "</td>";
+                html += "<td>" + info.credit + "</td>";
+                html += "<td>" + info.set + "</td>";
+                html += "<td>" + (info.tags ? info.tags.join(",") : "") + "</td>";
+                html += "</tr>";
             } else {
                 // Compact view
 
@@ -76,6 +88,10 @@ function update()
             }
          }
     }
+    if (full) {
+        html += "</table>";
+    }
+
     document.getElementById("s").innerHTML = html;
     document.getElementById("count").innerHTML = hits;
     window.status = "Found " + hits;
