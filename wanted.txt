@@ -16,7 +16,6 @@ berse
 fibnifrook - narrowknight + rook
 reversechariot
 murray_lion
-khohn
 kraken
 octopus
 forfnifurlrurking

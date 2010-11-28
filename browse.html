@@ -25,6 +25,7 @@ window.addEvent("domready", function()
 function update()
 {
     var q = document.getElementById("q").value;
+    var full = document.getElementById("view_full").checked;
     var hits = 0;
     var html = "";
 
@@ -39,19 +40,31 @@ function update()
                 var color = COLORS[i];
                 var path = "";
 
-                html += '<img src="' + path + color + id + '.gif">';
+                if (full) {
+                    html += '<img src="' + path + color + id + '.gif">';
+                }
             }
-            html += info.longname + "<br>";
+            if (full) {
+                html += info.longname + "<br>";
+            }
         }
     }
     document.getElementById("s").innerHTML = html;
+    document.getElementById("count").innerHTML = hits;
     window.status = "Found " + hits;
 }
 </script>
 </head>
 <body>
-<div style="height: 600px; width: 750px">
-<input name="q" id="q" type="search" style="width: 100%" onchange="update()">
+<div style="height: 600px; width: 90%">
+<input name="q" id="q" type="search" style="width: 100%" onchange="update()" accesskey="q"><br>
+<span style="float: left">Found <span id="count"></span> pieces</span>
+
+<span style="float: right">
+<input id="view_full" type="radio" name="view" value="full" checked><label for="view_full" onclick="update()" accesskey="f">full</label> <!-- TODO: update when invoked from access key -->
+<input id="view_compact" type="radio" name="view" value="compact"><label for="view_compact" onclick="update()" accesskey="c">compact</label>
+</span>
+
 <div style="border: 1px solid black; height: 100%; width: 100%; overflow: auto">
 <span id="s"></span>
 <!-- https://github.com/blog/273-github-ribbons -->
