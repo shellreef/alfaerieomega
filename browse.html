@@ -51,13 +51,13 @@ function update()
                 // Compact view
 
                 // TODO: get this iteration working
-                info = id + "\n";
+                title = id + "\n";
                 for (var key in info) {
                     if (info.hasOwnProperty(key)) {
-                        info += key + ": " + info[key];
+                        title += key + ": " + info[key] + "\n";
                     }
                 }
-                html += '<div class="compact-piece" title="' + info + '">'; // TODO: escape
+                html += '<div class="compact-piece" title="' + title + '">'; // TODO: escape
 
                 // Two colors only
                 var colors = ["b", "w"];
