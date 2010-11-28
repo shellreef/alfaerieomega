@@ -50,7 +50,7 @@ function update()
             } else {
                 // Compact view
 
-                // TODO: get this iteration working
+                // Info on piece in tooltip
                 title = id + "\n";
                 for (var key in info) {
                     if (info.hasOwnProperty(key)) {
@@ -64,7 +64,11 @@ function update()
                 for (var i = 0; i < colors.length; i += 1) {
                     html += '<img src="' + colors[i] + id + '.gif" width="50" height="50">';    // Fixed size so aligns consistently (TODO: consistent image sizes in files themselves!)
                 }
-                html += '<p class="compact-piece-name">' + id + '</p>'; // TODO: escape
+
+                // Shorten piece name so it'll fit compactly (TODO: make piece image filenames themselves short)
+                var short_id = (id.length > 14) ? (id.substr(0, 4) + "&hellip;" + id.substr(-7)) : id;
+
+                html += '<p class="compact-piece-name">' + short_id + '</p>'; // TODO: escape
                 html += "</p></div>";
             }
          }
