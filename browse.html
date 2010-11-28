@@ -22,6 +22,9 @@ window.addEvent("domready", function()
     field.focus();
     field.addEvents({keyup: update});
 
+    $("view_full").addEvents({click: update});
+    $("view_compact").addEvents({click: update});
+
     update();
 });
 
@@ -80,14 +83,16 @@ function update()
 </script>
 </head>
 <body>
+<form>
 <div style="height: 600px; width: 90%">
-<input name="q" id="q" type="search" style="width: 100%" onchange="update()" accesskey="q"><br>
+<input name="q" id="q" type="search" style="width: 100%" accesskey="q"><br>
 <span style="float: left">Found <span id="count"></span> pieces</span>
 
 <span style="float: right">
-<input id="view_full" type="radio" name="view" value="full" checked><label for="view_full" onclick="update()" accesskey="f">full</label> <!-- TODO: update when invoked from access key -->
-<input id="view_compact" type="radio" name="view" value="compact"><label for="view_compact" onclick="update()" accesskey="c">compact</label>
+<input id="view_full" type="radio" name="view" value="full" checked><label for="view_full" accesskey="f">full</label> <!-- TODO: update when invoked from access key -->
+<input id="view_compact" type="radio" name="view" value="compact"><label for="view_compact" accesskey="c">compact</label>
 </span>
+</form>
 
 <div style="border: 1px solid black; height: 100%; width: 100%; overflow: auto">
 <span id="s"></span>
