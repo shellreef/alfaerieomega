@@ -7,6 +7,7 @@
 import pprint
 import os
 import json
+import base64
 import Image
 import ImageOps
 
@@ -333,8 +334,13 @@ def writeIndexDocuments(index):
     """Write the index in text and HTML formats."""
     text = file("list.txt", "w")
     html = file("master.html", "w")
+    durl = file("dataurls.html", "w")
 
-    html.write("""<!DOCTYPE html>
+    def writeHTML(code):
+        html.write(code)
+        durl.write(code)
+
+    writeHTML("""<!DOCTYPE html>
 <html>
 <head>
 <title>Alfaerie Omega - Piece Index</title>
@@ -344,7 +350,6 @@ p { text-align: center; }
 </style>
 </head>
 <body bgcolor="lightgray">
-<table>
 <p>Total pieces: %s
 """ % (len(index.keys()),))
 
@@ -352,9 +357,12 @@ p { text-align: center; }
         info = index[name]
 
         text.write(name + "\n")
-	html.write("<div>")
+	writeHTML("<div>")
         for color in "wb":
             html.write("""<img src="%s%s.gif" width="50" height="50">""" % (color, name))  # TODO: make consistently 50x50!
+            imageData = file(color + name + ".gif", "rb").read()
+            dataURL = "data:image/gif;base64," + base64.encodestring(imageData).replace("\n", "")
+            durl.write("""<img src="%s" width="50" height="50">""" % (dataURL,))
         if len(name) > 12:
             shortname = name[0:4] + ".." + name[-7:-1] + name[-1]  # fit the name in :( TODO: make real names not so long!
         else:
@@ -362,10 +370,10 @@ p { text-align: center; }
         text_info = name + "\n"
         for key in sorted(info.iterkeys()):
             text_info += "%s: %s\n" % (key, info[key])
-        html.write("""<p title="%s">%s</p>""" % (text_info, shortname))
-        html.write("</div>")
+        writeHTML("""<p title="%s">%s</p>""" % (text_info, shortname))
+        writeHTML("</div>")
 
-    html.write("""</table>
+    writeHTML("""
 </body>
 </html>""")
 
