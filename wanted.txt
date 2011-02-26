@@ -28,6 +28,11 @@ q5
 q6
 q7
 
+** 
+Chinese characters in circles for Chinese chess (Xiangqi)
+all the 209 different pieces (!) for Taikyoku Shogi http://en.wikipedia.org/wiki/Taikyoku_shogi
+Japanese characters in trapezoids for Japanese chess (Shogi) and variants
+
 ** animal symbols http://unicode.org/charts/PDF/U1F300.pdf
 waterbuffalo
 cow
