@@ -653,6 +653,7 @@ var INDEX = {
  "rook90cw": {"credit": "David Howe", "longname": "Rook 90cw", "set": "Alfaerie Expansion Set 1", "tags": ["rotated"]},
  "rookdabbaba": {"credit": "ChessVariants", "longname": "Rook-Dabbaba", "set": "Alfaerie Misc: good", "tags": ["compound"]},
  "rookelephantrider": {"credit": "ChessVariants", "longname": "Rook-Elephantrider", "set": "Alfaerie Misc: wheeler", "tags": ["animal", "compound"]},
+ "rookhopper": {"credit": "Jeff Connelly", "longname": "Rook Hopper", "set": "Alfaerie Beta"},
  "rookinv": {"credit": "David Howe", "longname": "Rook inv", "set": "Alfaerie", "tags": ["rotated"]},
  "rookknight2": {"credit": "David Howe", "longname": "Rook-Knight II", "set": "Alfaerie Expansion Set 2", "tags": ["compound"]},
  "rookpawn": {"credit": "David Howe", "longname": "Rook-Pawn", "set": "Alfaerie", "tags": ["compound"]},
