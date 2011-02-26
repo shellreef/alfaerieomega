@@ -89,6 +89,7 @@ bishop90cw
 bishopinv
 bishopknight2
 bishoppawn
+bishopper
 bishopwarmachine
 bishopwarmachinerider
 bison
