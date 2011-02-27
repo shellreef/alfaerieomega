@@ -11,7 +11,11 @@ import base64
 import Image
 import ImageOps
 
-INDEX_FILE = "index.json"
+
+HTML_DATA_FILE = "master.html"
+HTML_LEGACY_FILE = "master-external.html"
+JSON_FILE = "aomega.json"
+JSON_DATA_FILE = "aomega-data.json"
 
 # b*.gif standardize on this blue
 BLUE = "#5984bd"
@@ -248,9 +252,9 @@ def saveImage(image, filename):
 
 def updatePieceIndex():
     """Get the index of pieces, generating if needed."""
-    if os.path.exists(INDEX_FILE):
+    if os.path.exists(JSON_FILE):
         # Load existing metadata 
-        index = json.loads(file(INDEX_FILE).read())
+        index = json.loads(file(JSON_FILE).read())
     else:
         index = {}
 
@@ -276,6 +280,8 @@ def updatePieceIndex():
         byColor[prefix][name] = True
         byName[name].append(prefix)
 
+    imageDatas = {}
+
     for name, colors in byName.iteritems():
         if not ("b" in colors and "w" in colors):
             # These are not considered pieces
@@ -293,48 +299,74 @@ def updatePieceIndex():
             #index[name] = {"set": "Alfaerie Beta", "credit": "Jeff Connelly"}   #findImageSet("w"+name+".gif")}
         # Otherwise, leave existing entry (preserve metadata)
 
+        # Read data for each color
+        imageDatas[name] = {}
+        for color in ["b", "w"]:  #colors:  # TODO: all colors? but then baloons file from <1MB to 13MB!
+            imageDatas[name][color] = dataURIfor(color + name + ".gif")
+
     # TODO: more info (credits, don't overwrite but reconcile existing), make the list a dict
 
-    #file(INDEX_FILE, "w").write(json.dumps(index, indent=1))
+    #file(JSON_FILE, "w").write(json.dumps(index, indent=1))
     # Save as JSON for ease usage in other applications
     # Could simply use json.dumps(index), but want the dictionary keys to
     # be sorted to avoid noisy diffs in version control.
-    out = file(INDEX_FILE, "w")
-    out.write("{\n")
+    out = file(JSON_FILE, "w")
+    dataout = file(JSON_DATA_FILE, "w")
+
+    def write(code):
+        out.write(code)
+        dataout.write(code)
+
+    write("{\n")
 
     for i, name in enumerate(sorted(index.keys())):
         info = index[name]
-        out.write(" %s: {" % (json.dumps(name),))
+        write(" %s: {" % (json.dumps(name),))
 
-        for j, key in enumerate(sorted(info.keys())):
-            value = info[key]
-            out.write("%s: %s" % (json.dumps(key), json.dumps(value)))
-            if j != len(info.keys()) - 1:
-                out.write(", ");
-        out.write("}")
+        def dumpKeys(info):
+            s = ""
+            for j, key in enumerate(sorted(info.keys())):
+                value = info[key]
+                s += "%s: %s" % (json.dumps(key), json.dumps(value))
+                if j != len(info.keys()) - 1:
+                    s += ", "
+            return s
+
+        out.write(dumpKeys(info))
+        dataInfo = dict(info, **{"data": imageDatas[name]})
+        dataout.write(dumpKeys(dataInfo))
+
+        write("}")
 
         # JSON spec (and IE, but no one cares about them) require omitting
         # comma for last item in list
         if i != len(index.keys()) - 1:
-            out.write(",")
+            write(",")
 
-        out.write("\n")
+        write("\n")
 
-    out.write("}\n")
+    write("}\n")
     out.close()
 
     # Save JSONP for easy <script src> reference
-    file(INDEX_FILE + "p", "w").write("var INDEX = %s;" % (file(INDEX_FILE).read(),))
+    file(JSON_FILE + "p", "w").write("var INDEX = %s;" % (file(JSON_FILE).read(),))
+    file(JSON_DATA_FILE + "p", "w").write("var INDEX = %s;" % (file(JSON_DATA_FILE).read(),))
 
     print "Loaded %s pieces" % (len(index.keys()),)
 
     return index
 
+def dataURIfor(filename):
+    imageData = file(filename, "rb").read()
+    dataURI = "data:image/gif;base64," + base64.encodestring(imageData).replace("\n", "")
+
+    return dataURI
+
 def writeIndexDocuments(index):
     """Write the index in text and HTML formats."""
     text = file("list.txt", "w")
-    html = file("master.html", "w")
-    durl = file("dataurls.html", "w")
+    html = file(HTML_LEGACY_FILE, "w")
+    durl = file(HTML_DATA_FILE, "w")
 
     def writeHTML(code):
         html.write(code)
@@ -353,6 +385,9 @@ p { text-align: center; }
 <p>Total pieces: %s
 """ % (len(index.keys()),))
 
+    durl.write("""<p><em style="align: center">This page requires data: URI support. <a href="master-external.html">Click here if all the images are broken</a>.</em>""")
+    html.write("""<p><em style="align: center">If the images on this page take too long to load, and you have a modern browser, try the <a href="master.html">data URI version of this page</a>.</em>""")
+
     for name in sorted(index.keys()):
         info = index[name]
 
@@ -360,9 +395,7 @@ p { text-align: center; }
 	writeHTML("<div>")
         for color in "wb":
             html.write("""<img src="%s%s.gif" width="50" height="50">""" % (color, name))  # TODO: make consistently 50x50!
-            imageData = file(color + name + ".gif", "rb").read()
-            dataURL = "data:image/gif;base64," + base64.encodestring(imageData).replace("\n", "")
-            durl.write("""<img src="%s" width="50" height="50">""" % (dataURL,))
+            durl.write("""<img id="%s%s" src="%s" width="50" height="50">""" % (color, name, dataURIfor(color + name + ".gif"),))
         if len(name) > 12:
             shortname = name[0:4] + ".." + name[-7:-1] + name[-1]  # fit the name in :( TODO: make real names not so long!
         else:

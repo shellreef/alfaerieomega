@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alfaerie Omega: Browser</title>
+<style>
+div.compact-piece { float: left; border: 1px dotted black; }
+p.compact-piece-name { text-align: center; }
+</style>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.0/mootools-yui-compressed.js"></script> -->
+<script src="mootools1.11.js"></script>
+<script src="aomega.jsonp"></script> <!-- defines INDEX global -->
+<script>
+var COLORS = ["w", "b", "y", "r", "g", "c", "o", "p", "e"];
+
+// Initialize
+window.addEvent("domready", function() 
+{
+    var req, field;
+
+    field = $("q");
+    field.focus();
+    field.addEvents({keyup: update});
+
+    $("view_full").addEvents({click: update});
+    $("view_compact").addEvents({click: update});
+
+    update();
+});
+
+// Update the search results
+function update()
+{
+    var q = document.getElementById("q").value;
+    var full = document.getElementById("view_full").checked;
+    var compact = !full;
+    var hits = 0;
+    var html = "";
+
+    if (full) {
+        html = "<table>";    // TODO: sort-to-click table headings
+    }
+
+    for (var id in INDEX) {
+        var info = INDEX[id];
+        var tags = info.tags;
+
+        if (id.contains(q) || (tags && tags.contains(q))) {
+            hits += 1;
+
+            if (full) {
+                html += "<tr>"
+                html += "<td>" + id + "</td>";
+                html += "<td>";
+                // Full view, display all colors
+                for (var i = 0; i < COLORS.length; i += 1) {
+                    html += '<img src="' + COLORS[i] + id + '.gif">';
+                }
+                html += "</td>";
+                html += "<td>" + info.longname + "</td>";
+                html += "<td>" + info.credit + "</td>";
+                html += "<td>" + info.set + "</td>";
+                html += "<td>" + (info.tags ? info.tags.join(",") : "") + "</td>";
+                html += "</tr>";
+            } else {
+                // Compact view
+
+                // Info on piece in tooltip
+                title = id + "\n";
+                for (var key in info) {
+                    if (info.hasOwnProperty(key)) {
+                        title += key + ": " + info[key] + "\n";
+                    }
+                }
+                html += '<div class="compact-piece" title="' + title + '">'; // TODO: escape
+
+                // Two colors only
+                var colors = ["b", "w"];
+                for (var i = 0; i < colors.length; i += 1) {
+                    html += '<img src="' + colors[i] + id + '.gif" width="50" height="50">';    // Fixed size so aligns consistently (TODO: consistent image sizes in files themselves!)
+                }
+
+                // Shorten piece name so it'll fit compactly (TODO: make piece image filenames themselves short)
+                var short_id = (id.length > 14) ? (id.substr(0, 4) + "&hellip;" + id.substr(-7)) : id;
+
+                html += '<p class="compact-piece-name">' + short_id + '</p>'; // TODO: escape
+                html += "</p></div>";
+            }
+         }
+    }
+    if (full) {
+        html += "</table>";
+    }
+
+    document.getElementById("s").innerHTML = html;
+    document.getElementById("count").innerHTML = hits;
+    window.status = "Found " + hits;
+}
+</script>
+</head>
+<body>
+<noscript>
+<p><em>Sorry, you don't have JavaScript enabled you won't be able to use this search feature.
+Maybe you'll have better luck with the <a href="master.html">static page</a></em>.
+</noscript>
+
+<form>
+<div style="height: 600px; width: 90%">
+<input name="q" id="q" type="search" style="width: 100%" accesskey="q"><br>
+<span style="float: left">Found <span id="count"></span> pieces</span>
+
+<span style="float: right">
+<input id="view_full" type="radio" name="view" value="full" checked><label for="view_full" accesskey="f">full</label> <!-- TODO: update when invoked from access key -->
+<input id="view_compact" type="radio" name="view" value="compact"><label for="view_compact" accesskey="c">compact</label>
+</span>
+</form>
+
+<div style="border: 1px solid black; height: 100%; width: 100%; overflow: auto">
+<span id="s"></span>
+<!-- https://github.com/blog/273-github-ribbons -->
+<a href="http://github.com/shellreef/alfaerieomega"><img style="position: absolute; top: 0; right: 0; border: 0;" 
+xsrc="http://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" 
+src="forkme_right_green_007200.png" 
+alt="Fork me on GitHub" /></a>
+</div>
+</div>
+</body>
+</html>
